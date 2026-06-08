@@ -9,7 +9,7 @@ export const LeftCorner = () => {
 
   return (
     <>
-      <div className="flex items-center gap-2 px-3">
+      <div className="flex items-center gap-2">
         <Link to="/arrivals">
           <button className={styleBtn}>
             <span className="text-sm font-semibold">Arrivals</span>

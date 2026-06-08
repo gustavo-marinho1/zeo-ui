@@ -1,18 +1,19 @@
 import { ChevronDown } from "lucide-react"
 
 interface Props {
-  scrollToProducts: () => void
+  label: string,
+  scroll: () => void
 }
 
-const ScrolldownButton = ({ scrollToProducts }: Props) => {
+const ScrolldownButton = ({ label, scroll }: Props) => {
   return (
-    <div className="absolute bottom-0 w-full flex justify-center text-white">
+    <div className="h-min flex justify-center text-black">
       <button
-        onClick={scrollToProducts}
+        onClick={scroll}
         className="flex flex-col items-center gap-2 text-sm tracking-wider transition-opacity hover:opacity-60 cursor-pointer mb-4"
-        aria-label="See other products"
+        aria-label={label}
       >
-        <span className="font-mono font-semibold">see all products</span>
+        <span className="font-mono font-semibold">{label}</span>
         <ChevronDown className="h-6 w-6 animate-bounce" strokeWidth={1} />
       </button>
     </div>

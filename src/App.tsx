@@ -2,7 +2,9 @@ import Router from './router/Index'
 
 function App() {
   return (
-    <Router />
+    <div className="scroll-smooth font-mono bg-white">
+      <Router />
+    </div>
   )
 }
 

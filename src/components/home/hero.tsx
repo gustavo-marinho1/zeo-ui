@@ -1,8 +1,8 @@
 const Hero = () => {
   return (
-    <div className="absolute top-0 left-0 w-full h-screen flex justify-center items-center">
+    <div className="w-full h-full flex justify-center items-center overflow-hidden">
       <img
-        src="./images/hero/woman-banner-01.png"
+        src="./images/banners/woman-banner-01.png"
         alt="Hero-01"
         className="w-full h-full object-cover"
       />

@@ -23,17 +23,14 @@ export const ShopOptions = ({ close }: { close: () => void }) => {
           <span className="font-semibold text-xs uppercase">Shoes</span>
           <div className="flex flex-col gap-0.5 text-sm">
             <Link to="/shop/sneakers" className="hover:underline">Sneakers</Link>
-            <Link to="/shop/boots" className="hover:underline">Boots</Link>
           </div>
         </div>
 
         <div className="flex flex-col gap-2">
           <span className="font-semibold text-xs uppercase">Accessories</span>
           <div className="flex flex-col gap-0.5 text-sm">
-            <Link to="/shop/glasses" className="hover:underline">Glasses</Link>
-            <Link to="/shop/bags" className="hover:underline">Bags</Link>
+            {/* <Link to="/shop/glasses" className="hover:underline">Glasses</Link> */}
             <Link to="/shop/hats" className="hover:underline">Hats</Link>
-            <Link to="/shop/belts" className="hover:underline">Belts</Link>
           </div>
         </div>
 

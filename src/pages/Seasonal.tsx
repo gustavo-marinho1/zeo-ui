@@ -1,24 +1,28 @@
 import Header from "../components/header/header";
-import Product from "../components/home/product";
-import { ProductGrid, ProductGroup } from "../components/home/product-group";
-import { products } from "../lib/products";
+import Product from "../components/product/product";
+import { ProductGrid } from "../components/home/product-group";
+import { seasonal } from "../lib/products";
+import Footer from "../components/footer/footer";
 
 export default function Seasonal() {
   return (
-    <main className="scroll-smooth">
-      <section className="relative w-full">
-        <Header />
-      </section>
+    <>
+      <Header />
 
-      <section className="min-h-screen pt-21 pb-20 px-4 bg-gradient-to-r from-neutral-50 via-white to-neutral-200/50">
-        <ProductGroup title="Seasonal">
+      <main className="min-h-screen py-20 px-4">
+        <div className="flex flex-col justify-center gap-10">
+          <div className="text-center">
+            <label className="text-2xl font-semibold">Seasonal</label>
+          </div>
           <ProductGrid>
-            {products.map((product) => (
-              <Product key={product.id} name={product.name} name_url={product.name_url} price={product.price} />
+            {seasonal.map((product) => (
+              <Product key={product.id} product={product} />
             ))}
           </ProductGrid>
-        </ProductGroup>
-      </section>
-    </main>
+        </div>
+      </main>
+
+      <Footer />
+    </>
   )
 }
