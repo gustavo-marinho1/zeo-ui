@@ -15,7 +15,7 @@ const hd01: ProductType = {
   description: "HOODIE 01",
   images: ["01.png"],
   price: 435.00,
-  category: ["HOODIES"]
+  category: ["TOPS", "HOODIES"]
 }
 
 const hd02: ProductType = {
@@ -25,7 +25,7 @@ const hd02: ProductType = {
   description: "HOODIE 02",
   images: ["01.png"],
   price: 435.00,
-  category: ["HOODIES"]
+  category: ["TOPS", "HOODIES"]
 }
 
 const hd03: ProductType = {
@@ -35,7 +35,7 @@ const hd03: ProductType = {
   images: ["01.png"],
   description: "HOODIE 03",
   price: 435.00,
-  category: ["HOODIES", "HOODIES"]
+  category: ["TOPS", "HOODIES"]
 }
 
 const hd04: ProductType = {
@@ -45,7 +45,7 @@ const hd04: ProductType = {
   images: ["01.png"],
   description: "HOODIE 04",
   price: 435.00,
-  category: ["HOODIES"]
+  category: ["TOPS", "HOODIES"]
 }
 
 const hd05: ProductType = {
@@ -55,7 +55,7 @@ const hd05: ProductType = {
   images: ["01.png"],
   description: "HOODIE 05",
   price: 435.00,
-  category: ["HOODIES"]
+  category: ["TOPS", "HOODIES"]
 }
 
 const hd06: ProductType = {
@@ -65,7 +65,7 @@ const hd06: ProductType = {
   description: "HOODIE 06",
   images: ["01.png"],
   price: 435.00,
-  category: ["HOODIES"]
+  category: ["TOPS", "HOODIES"]
 }
 
 const jc01: ProductType = {
@@ -75,7 +75,7 @@ const jc01: ProductType = {
   description: "JACKET 01",
   images: ["01.png"],
   price: 435.00,
-  category: ["JACKETS"]
+  category: ["TOPS", "JACKETS"]
 }
 
 const jc02: ProductType = {
@@ -85,7 +85,7 @@ const jc02: ProductType = {
   description: "JACKET 02",
   images: ["01.png"],
   price: 435.00,
-  category: ["JACKETS"]
+  category: ["TOPS", "JACKETS"]
 }
 
 const jc03: ProductType = {
@@ -95,7 +95,7 @@ const jc03: ProductType = {
   images: ["01.png"],
   description: "JACKET 03",
   price: 435.00,
-  category: ["JACKETS"]
+  category: ["TOPS", "JACKETS"]
 }
 
 const jc04: ProductType = {
@@ -105,58 +105,78 @@ const jc04: ProductType = {
   description: "JACKET 04",
   images: ["01.png"],
   price: 435.00,
-  category: ["JACKETS"]
+  category: ["TOPS", "JACKETS"]
 }
 
-// const ls01: ProductType = {
-//   id: "ls01",
-//   name: "LONG SLEEVE 01",
-//   name_url: "ls-01",
-//   description: "LONG SLEEVE 01",
-//   images: ["01.png"],
-//   price: 435.00,
-//   category: ["LONG SLEEVES"]
-// }
+const ls01: ProductType = {
+  id: "ls01",
+  name: "LONG SLEEVE 01",
+  name_url: "ls-01",
+  description: "LONG SLEEVE 01",
+  images: ["01.png"],
+  price: 435.00,
+  category: ["TOPS", "LONG-SLEEVES"]
+}
 
-// const ls02: ProductType = {
-//   id: "ls02",
-//   name: "LONG SLEEVE 02",
-//   name_url: "ls-02",
-//   description: "LONG SLEEVE 02",
-//   images: ["01.png"],
-//   price: 435.00,
-//   category: ["LONG SLEEVES"]
-// }
+const ls02: ProductType = {
+  id: "ls02",
+  name: "LONG SLEEVE 02",
+  name_url: "ls-02",
+  description: "LONG SLEEVE 02",
+  images: ["01.png"],
+  price: 435.00,
+  category: ["TOPS", "LONG-SLEEVES"]
+}
 
-// const ls03: ProductType = {
-//   id: "ls03",
-//   name: "LONG SLEEVE 03",
-//   name_url: "ls-03",
-//   images: ["01.png"],
-//   description: "LONG SLEEVE 03",
-//   price: 435.00,
-//   category: ["LONG SLEEVES"]
-// }
+const ls03: ProductType = {
+  id: "ls03",
+  name: "LONG SLEEVE 03",
+  name_url: "ls-03",
+  images: ["01.png"],
+  description: "LONG SLEEVE 03",
+  price: 435.00,
+  category: ["TOPS", "LONG-SLEEVES"]
+}
 
-// const ls04: ProductType = {
-//   id: "ls04",
-//   name: "LONG SLEEVE 04",
-//   name_url: "ls-04",
-//   images: ["01.png"],
-//   description: "LONG SLEEVE 04",
-//   price: 435.00,
-//   category: ["LONG SLEEVES"]
-// }
+const ct01: ProductType = {
+  id: "ct01",
+  name: "COAT 01",
+  name_url: "ct-01",
+  description: "COAT 01",
+  images: ["01.png"],
+  price: 435.00,
+  category: ["TOPS", "COATS"]
+}
 
-// const ls05: ProductType = {
-//   id: "ls05",
-//   name: "LONG SLEEVE 05",
-//   name_url: "ls-05",
-//   images: ["01.png"],
-//   description: "LONG SLEEVE 05",
-//   price: 435.00,
-//   category: ["LONG SLEEVES"]
-// }
+const ct02: ProductType = {
+  id: "ct02",
+  name: "COAT 02",
+  name_url: "ct-02",
+  description: "COAT 02",
+  images: ["01.png"],
+  price: 435.00,
+  category: ["TOPS", "COATS"]
+}
+
+const ct03: ProductType = {
+  id: "ct03",
+  name: "COAT 03",
+  name_url: "ct-03",
+  images: ["01.png"],
+  description: "COAT 03",
+  price: 435.00,
+  category: ["TOPS", "COATS"]
+}
+
+const ct04: ProductType = {
+  id: "ct04",
+  name: "COAT 04",
+  name_url: "ct-04",
+  images: ["01.png"],
+  description: "COAT 04",
+  price: 435.00,
+  category: ["TOPS", "COATS"]
+}
 
 const pn01: ProductType = {
   id: "pn01",
@@ -165,7 +185,7 @@ const pn01: ProductType = {
   description: "PANTS 01",
   images: ["01.png"],
   price: 435.00,
-  category: ["PANTS"]
+  category: ["BOTTOMS", "PANTS"]
 }
 
 const pn02: ProductType = {
@@ -175,7 +195,7 @@ const pn02: ProductType = {
   description: "PANTS 02",
   images: ["01.png"],
   price: 435.00,
-  category: ["PANTS"]
+  category: ["BOTTOMS", "PANTS"]
 }
 
 const pn03: ProductType = {
@@ -185,7 +205,7 @@ const pn03: ProductType = {
   images: ["01.png"],
   description: "PANTS 03",
   price: 435.00,
-  category: ["PANTS"]
+  category: ["BOTTOMS", "PANTS"]
 }
 
 const pn04: ProductType = {
@@ -195,7 +215,47 @@ const pn04: ProductType = {
   images: ["01.png"],
   description: "PANTS 04",
   price: 435.00,
-  category: ["PANTS"]
+  category: ["BOTTOMS", "PANTS"]
+}
+
+const pn05: ProductType = {
+  id: "pn05",
+  name: "PANTS 05",
+  name_url: "pn-05",
+  images: ["01.png"],
+  description: "PANTS 05",
+  price: 435.00,
+  category: ["BOTTOMS", "PANTS"]
+}
+
+const bt01: ProductType = {
+  id: "bt01",
+  name: "BOOTS 01",
+  name_url: "bt-01",
+  description: "BOOTS 01",
+  images: ["01.png"],
+  price: 435.00,
+  category: ["FOOTWEAR", "BOOTS"]
+}
+
+const bt02: ProductType = {
+  id: "bt02",
+  name: "BOOTS 02",
+  name_url: "bt-02",
+  description: "BOOTS 02",
+  images: ["01.png"],
+  price: 435.00,
+  category: ["FOOTWEAR", "BOOTS"]
+}
+
+const bt03: ProductType = {
+  id: "bt03",
+  name: "BOOTS 03",
+  name_url: "bt-03",
+  description: "BOOTS 03",
+  images: ["01.png"],
+  price: 435.00,
+  category: ["FOOTWEAR", "BOOTS"]
 }
 
 const sn01: ProductType = {
@@ -205,7 +265,7 @@ const sn01: ProductType = {
   images: ["01.png"],
   description: "SNEAKERS 01",
   price: 435.00,
-  category: ["SNEAKERS"]
+  category: ["FOOTWEAR", "SNEAKERS"]
 }
 
 const sn02: ProductType = {
@@ -215,7 +275,7 @@ const sn02: ProductType = {
   images: ["01.png"],
   description: "SNEAKERS 02",
   price: 435.00,
-  category: ["SNEAKERS"]
+  category: ["FOOTWEAR", "SNEAKERS"]
 }
 
 const sn03: ProductType = {
@@ -225,7 +285,7 @@ const sn03: ProductType = {
   images: ["01.png"],
   description: "SNEAKERS 03",
   price: 435.00,
-  category: ["SNEAKERS"]
+  category: ["FOOTWEAR", "SNEAKERS"]
 }
 
 const sn04: ProductType = {
@@ -235,7 +295,17 @@ const sn04: ProductType = {
   images: ["01.png"],
   description: "SNEAKERS 04",
   price: 435.00,
-  category: ["SNEAKERS"]
+  category: ["FOOTWEAR", "SNEAKERS"]
+}
+
+const sn05: ProductType = {
+  id: "sn05",
+  name: "SNEAKERS 05",
+  name_url: "sn-05",
+  images: ["01.png"],
+  description: "SNEAKERS 05",
+  price: 435.00,
+  category: ["FOOTWEAR", "SNEAKERS"]
 }
 
 const ts01: ProductType = {
@@ -245,7 +315,7 @@ const ts01: ProductType = {
   images: ["01.png"],
   description: "T-SHIRT 01",
   price: 435.00,
-  category: ["T-SHIRTS"]
+  category: ["TOPS", "T-SHIRTS"]
 }
 
 const ts02: ProductType = {
@@ -255,7 +325,7 @@ const ts02: ProductType = {
   images: ["01.png"],
   description: "T-SHIRT 02",
   price: 435.00,
-  category: ["T-SHIRTS"]
+  category: ["TOPS", "T-SHIRTS"]
 }
 
 const ts03: ProductType = {
@@ -265,7 +335,7 @@ const ts03: ProductType = {
   images: ["01.png"],
   description: "T-SHIRT 03",
   price: 435.00,
-  category: ["T-SHIRTS"]
+  category: ["TOPS", "T-SHIRTS"]
 }
 
 const ts04: ProductType = {
@@ -275,7 +345,7 @@ const ts04: ProductType = {
   description: "T-SHIRT 04",
   images: ["01.png"],
   price: 435.00,
-  category: ["T-SHIRTS"]
+  category: ["TOPS", "T-SHIRTS"]
 }
 
 const ha01: ProductType = {
@@ -285,7 +355,7 @@ const ha01: ProductType = {
   images: ["01.png"],
   description: "HAT 01",
   price: 435.00,
-  category: ["HATS"]
+  category: ["ACCESSORIES", "HATS"]
 }
 
 const ha02: ProductType = {
@@ -295,7 +365,7 @@ const ha02: ProductType = {
   images: ["01.png"],
   description: "HAT 02",
   price: 435.00,
-  category: ["HATS"]
+  category: ["ACCESSORIES", "HATS"]
 }
 
 export const hoodies: ProductType[] = [
@@ -307,6 +377,13 @@ export const hoodies: ProductType[] = [
   hd06,
 ];
 
+export const coats: ProductType[] = [
+  ct01,
+  ct02,
+  ct03,
+  ct04
+];
+
 export const jackets: ProductType[] = [
   jc01,
   jc02,
@@ -314,22 +391,34 @@ export const jackets: ProductType[] = [
   jc04,
 ];
 
-export const long_sleeves: ProductType[] = [];
+export const long_sleeves: ProductType[] = [
+  ls01,
+  ls02,
+  ls03
+];
 
 export const pants: ProductType[] = [
   pn01,
   pn02,
   pn03,
   pn04,
+  pn05
 ];
 
 export const shorts: ProductType[] = [];
+
+export const boots: ProductType[] = [
+  bt01,
+  bt02,
+  bt03
+];
 
 export const sneakers: ProductType[] = [
   sn01,
   sn02,
   sn03,
   sn04,
+  sn05
 ];
 
 export const tshirts: ProductType[] = [
@@ -355,12 +444,40 @@ export const products: ProductType[] = [
   ...sneakers,
   ...tshirts,
   ...glasses,
-  ...hats
+  ...hats,
+  ...boots,
+  ...coats,
+  ...jackets,
+];
+
+export const tops: ProductType[] = [
+  ...hoodies,
+  ...jackets,
+  ...long_sleeves,
+  ...tshirts,
+  ...coats
+];
+
+export const bottoms: ProductType[] = [
+  ...pants,
+  ...shorts,
+];
+
+export const footwear: ProductType[] = [
+  ...sneakers,
+  ...boots,
+];
+
+export const accessories: ProductType[] = [
+  ...glasses,
+  ...hats,
 ];
 
 export const arrivals: ProductType[] = [
   hd05,
+  pn01,
   sn02,
+  sn03,
 ];
 
 export const seasonal: ProductType[] = [

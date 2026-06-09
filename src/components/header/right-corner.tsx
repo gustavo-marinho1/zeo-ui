@@ -5,15 +5,15 @@ export const RightCorner = () => {
     <div className="w-fit">
       <div className="flex gap-4 items-center text-black">
         <button className="cursor-pointer">
-          <Search size={22} strokeWidth={1.8} className="hover:text-zinc-700 transition-colors" />
+          <Search size={22} strokeWidth={1.3} className="hover:text-zinc-700 transition-colors" />
         </button>
 
         <button className="cursor-pointer">
-          <ShoppingCart size={22} strokeWidth={1.8} className="hover:text-zinc-700 transition-colors" />
+          <ShoppingCart size={22} strokeWidth={1.3} className="hover:text-zinc-700 transition-colors" />
         </button>
 
         <button className="cursor-pointer">
-          <User size={22} strokeWidth={1.8} className="hover:text-zinc-700 transition-colors" />
+          <User size={22} strokeWidth={1.3} className="hover:text-zinc-700 transition-colors" />
         </button>
       </div>
     </div>

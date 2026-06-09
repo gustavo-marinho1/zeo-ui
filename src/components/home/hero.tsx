@@ -1,11 +1,13 @@
 const Hero = () => {
   return (
-    <div className="w-full h-full flex justify-center items-center overflow-hidden">
-      <img
-        src="./images/banners/woman-banner-01.png"
-        alt="Hero-01"
-        className="w-full h-full object-cover"
-      />
+    <div className="flex-[1] h-[70vh] flex items-center">
+      <div className="w-full h-full flex justify-center">
+        <img
+          src="./images/banners/woman-banner-01.png"
+          alt="Hero-01"
+          className="h-full w-full object-cover"
+        />
+      </div>
     </div>
   )
 }

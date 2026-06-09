@@ -12,25 +12,10 @@ export const ShopOptions = ({ close }: { close: () => void }) => {
         <div className="flex flex-col gap-2">
           <span className="font-semibold text-xs uppercase">READY-TO-WEAR</span>
           <div className="flex flex-col gap-0.5 text-sm">
-            <Link to="/shop/t-shirts" className="hover:underline">T-shirts</Link>
-            <Link to="/shop/jackets" className="hover:underline">Jackets</Link>
-            <Link to="/shop/hoodies" className="hover:underline">Hoodies</Link>
-            <Link to="/shop/pants" className="hover:underline">Pants</Link>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <span className="font-semibold text-xs uppercase">Shoes</span>
-          <div className="flex flex-col gap-0.5 text-sm">
-            <Link to="/shop/sneakers" className="hover:underline">Sneakers</Link>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <span className="font-semibold text-xs uppercase">Accessories</span>
-          <div className="flex flex-col gap-0.5 text-sm">
-            {/* <Link to="/shop/glasses" className="hover:underline">Glasses</Link> */}
-            <Link to="/shop/hats" className="hover:underline">Hats</Link>
+            <Link to="/shop/tops" className="hover:underline">Tops</Link>
+            <Link to="/shop/bottoms" className="hover:underline">Bottoms</Link>
+            <Link to="/shop/footwear" className="hover:underline">Footwear</Link>
+            <Link to="/shop/accessories" className="hover:underline">Accessories</Link>
           </div>
         </div>
 

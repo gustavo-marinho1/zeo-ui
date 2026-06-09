@@ -3,21 +3,11 @@ import Header from "../components/header/header";
 import ScrolldownButton from "../components/home/scrolldown-btn";
 import Footer from "../components/footer/footer";
 import { Arrivals } from "../components/home/arrivals";
-import { Seasonal } from "../components/home/seasonal";
-import { Explore } from "../components/home/explore";
+import { ExploreMore } from "../components/home/explore";
+import Hero from "../components/home/hero";
 
 export default function Home() {
-  const arrivalsRef = useRef<HTMLElement>(null);
-  const seasonalRef = useRef<HTMLElement>(null);
   const exploreRef = useRef<HTMLElement>(null);
-
-  const scrollToArrivals = () => {
-    arrivalsRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const scrollToSeasonal = () => {
-    seasonalRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
 
   const scrollToExplore = () => {
     exploreRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -27,36 +17,29 @@ export default function Home() {
     <>
       <div className="relative w-full min-h-[100vh] flex flex-col justify-between">
         <Header />
-        <div className="w-full flex-[1] flex items-center">
-          Hero
+        <div className="w-full flex-[1] flex items-center mt-16">
+          <Hero />
         </div>
         <div className="">
-          <ScrolldownButton label="Arrivals" scroll={scrollToArrivals} />
+          <ScrolldownButton label="Explore" scroll={scrollToExplore} />
         </div>
       </div>
 
       <main>
-        <section className="relative w-full min-h-[100vh] flex flex-col justify-between" ref={arrivalsRef}>
+        <section className="relative w-full flex flex-col justify-between mb-14" ref={exploreRef}>
           <div className="w-full flex-[1] flex items-center py-20 pb-12">
             <Arrivals />
           </div>
-          <div className="hidden md:block">
-            <ScrolldownButton label="Seasonal" scroll={scrollToSeasonal} />
+        </section>
+
+        <section className="relative w-full min-h-[70vh] max-h-[80vh] flex">
+          <div className="w-full flex-[1] flex items-center py-20 pb-12 bg-gradient-to-br from-neutral-900 via-neutral-900/93 to-neutral-900/98">
           </div>
         </section>
 
-        <section className="relative w-full min-h-[100vh] flex flex-col justify-between" ref={seasonalRef}>
+        <section className="relative w-full flex flex-col justify-between">
           <div className="w-full flex-[1] flex items-center py-20 pb-12">
-            <Seasonal />
-          </div>
-          <div className="hidden md:block">
-            <ScrolldownButton label="Explore more" scroll={scrollToExplore} />
-          </div>
-        </section>
-
-        <section className="relative w-full min-h-[100vh] flex flex-col justify-between" ref={exploreRef}>
-          <div className="w-full flex-[1] flex items-center py-20 pb-12">
-            <Explore />
+            <ExploreMore />
           </div>
         </section>
       </main>
