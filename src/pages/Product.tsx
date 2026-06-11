@@ -26,7 +26,7 @@ export default function Product() {
     } catch (error) {
       setState(undefined);
     } finally {
-      setTimeout(() => setLoading(false), 1000);
+      setTimeout(() => setLoading(false), 500);
     }
   }
 
@@ -37,10 +37,10 @@ export default function Product() {
       <main className="min-h-screen pt-16 flex">
         {loading ? (
           <div className="flex-1 flex justify-center items-center">
-            <span className="text-xl animate-pulse">Loading...</span>
+            <span className="text-lg animate-pulse">Loading...</span>
           </div>
         ) : product ? (
-          <div className="flex-[1] flex flex-col md:flex-row">
+          <div className="flex-[1] flex flex-col md:flex-row sm:px-10 md:px-15 lg:px-20 py-10">
 
             <div className="flex-[1] flex flex-col">
               {product.images.map((image) => (
@@ -67,7 +67,7 @@ export default function Product() {
           </div>
         ) : (
           <div className="flex-1 flex justify-center items-center">
-            <span className="text-xl">Not found</span>
+            <span className="text-lg">Not found</span>
           </div>
         )}
       </main>

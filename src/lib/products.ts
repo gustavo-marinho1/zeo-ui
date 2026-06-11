@@ -138,6 +138,16 @@ const ls03: ProductType = {
   category: ["TOPS", "LONG-SLEEVES"]
 }
 
+const ls04: ProductType = {
+  id: "ls04",
+  name: "LONG SLEEVE 04",
+  name_url: "ls-04",
+  images: ["01.png"],
+  description: "LONG SLEEVE 04",
+  price: 435.00,
+  category: ["TOPS", "LONG-SLEEVES"]
+}
+
 const ct01: ProductType = {
   id: "ct01",
   name: "COAT 01",
@@ -228,6 +238,26 @@ const pn05: ProductType = {
   category: ["BOTTOMS", "PANTS"]
 }
 
+const pn06: ProductType = {
+  id: "pn06",
+  name: "PANTS 06",
+  name_url: "pn-06",
+  images: ["01.png"],
+  description: "PANTS 06",
+  price: 435.00,
+  category: ["BOTTOMS", "PANTS"]
+}
+
+const pn07: ProductType = {
+  id: "pn07",
+  name: "PANTS 07",
+  name_url: "pn-07",
+  images: ["01.png"],
+  description: "PANTS 07",
+  price: 435.00,
+  category: ["BOTTOMS", "PANTS"]
+}
+
 const bt01: ProductType = {
   id: "bt01",
   name: "BOOTS 01",
@@ -253,6 +283,16 @@ const bt03: ProductType = {
   name: "BOOTS 03",
   name_url: "bt-03",
   description: "BOOTS 03",
+  images: ["01.png"],
+  price: 435.00,
+  category: ["FOOTWEAR", "BOOTS"]
+}
+
+const bt04: ProductType = {
+  id: "bt04",
+  name: "BOOTS 04",
+  name_url: "bt-04",
+  description: "BOOTS 04",
   images: ["01.png"],
   price: 435.00,
   category: ["FOOTWEAR", "BOOTS"]
@@ -308,6 +348,26 @@ const sn05: ProductType = {
   category: ["FOOTWEAR", "SNEAKERS"]
 }
 
+const sn06: ProductType = {
+  id: "sn06",
+  name: "SNEAKERS 06",
+  name_url: "sn-06",
+  images: ["01.png"],
+  description: "SNEAKERS 06",
+  price: 435.00,
+  category: ["FOOTWEAR", "SNEAKERS"]
+}
+
+const sn07: ProductType = {
+  id: "sn07",
+  name: "SNEAKERS 07",
+  name_url: "sn-07",
+  images: ["01.png"],
+  description: "SNEAKERS 07",
+  price: 435.00,
+  category: ["FOOTWEAR", "SNEAKERS"]
+}
+
 const ts01: ProductType = {
   id: "ts01",
   name: "T-SHIRT 01",
@@ -348,6 +408,36 @@ const ts04: ProductType = {
   category: ["TOPS", "T-SHIRTS"]
 }
 
+const ts05: ProductType = {
+  id: "ts05",
+  name: "T-SHIRT 05",
+  name_url: "ts-05",
+  images: ["01.png"],
+  description: "T-SHIRT 05",
+  price: 435.00,
+  category: ["TOPS", "T-SHIRTS"]
+}
+
+const ts06: ProductType = {
+  id: "ts06",
+  name: "T-SHIRT 06",
+  name_url: "ts-06",
+  images: ["01.png"],
+  description: "T-SHIRT 06",
+  price: 435.00,
+  category: ["TOPS", "T-SHIRTS"]
+}
+
+const ts07: ProductType = {
+  id: "ts07",
+  name: "T-SHIRT 07",
+  name_url: "ts-07",
+  images: ["01.png"],
+  description: "T-SHIRT 07",
+  price: 435.00,
+  category: ["TOPS", "T-SHIRTS"]
+}
+
 const ha01: ProductType = {
   id: "ha01",
   name: "HAT 01",
@@ -366,6 +456,26 @@ const ha02: ProductType = {
   description: "HAT 02",
   price: 435.00,
   category: ["ACCESSORIES", "HATS"]
+}
+
+const gs01: ProductType = {
+  id: "gs01",
+  name: "GLASSES 01",
+  name_url: "gs-01",
+  images: ["01.png"],
+  description: "GLASSES 01",
+  price: 435.00,
+  category: ["ACCESSORIES", "GLASSES"]
+}
+
+const gs02: ProductType = {
+  id: "gs02",
+  name: "GLASSES 02",
+  name_url: "gs-02",
+  images: ["01.png"],
+  description: "GLASSES 02",
+  price: 435.00,
+  category: ["ACCESSORIES", "GLASSES"]
 }
 
 export const hoodies: ProductType[] = [
@@ -394,7 +504,8 @@ export const jackets: ProductType[] = [
 export const long_sleeves: ProductType[] = [
   ls01,
   ls02,
-  ls03
+  ls03,
+  ls04
 ];
 
 export const pants: ProductType[] = [
@@ -402,7 +513,9 @@ export const pants: ProductType[] = [
   pn02,
   pn03,
   pn04,
-  pn05
+  pn05,
+  pn06,
+  pn07
 ];
 
 export const shorts: ProductType[] = [];
@@ -410,7 +523,8 @@ export const shorts: ProductType[] = [];
 export const boots: ProductType[] = [
   bt01,
   bt02,
-  bt03
+  bt03,
+  bt04
 ];
 
 export const sneakers: ProductType[] = [
@@ -418,7 +532,9 @@ export const sneakers: ProductType[] = [
   sn02,
   sn03,
   sn04,
-  sn05
+  sn05,
+  sn06,
+  sn07
 ];
 
 export const tshirts: ProductType[] = [
@@ -426,9 +542,15 @@ export const tshirts: ProductType[] = [
   ts02,
   ts03,
   ts04,
+  ts05,
+  ts06,
+  ts07
 ];
 
-export const glasses: ProductType[] = [];
+export const glasses: ProductType[] = [
+  gs01,
+  gs02
+];
 
 export const hats: ProductType[] = [
   ha01,
@@ -469,8 +591,8 @@ export const footwear: ProductType[] = [
 ];
 
 export const accessories: ProductType[] = [
-  ...glasses,
   ...hats,
+  ...glasses,
 ];
 
 export const arrivals: ProductType[] = [

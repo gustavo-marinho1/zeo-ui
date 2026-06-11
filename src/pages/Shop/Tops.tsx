@@ -29,6 +29,10 @@ export default function Tops() {
     {
       label: "Hoodies",
       value: "HOODIES",
+    },
+    {
+      label: "Coats",
+      value: "COATS",
     }
   ];
 

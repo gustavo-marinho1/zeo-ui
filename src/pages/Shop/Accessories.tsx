@@ -22,10 +22,10 @@ export default function Accessories() {
       label: "Glasses",
       value: "GLASSES",
     },
-    {
-      label: "Bags",
-      value: "BAGS",
-    },
+    // {
+    //   label: "Bags",
+    //   value: "BAGS",
+    // },
   ];
 
   const applyFilter = (filter: string) => {
