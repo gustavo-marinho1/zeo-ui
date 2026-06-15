@@ -7,14 +7,14 @@ interface Props {
 
 const ScrolldownButton = ({ label, scroll }: Props) => {
   return (
-    <div className="h-min flex justify-center text-black">
+    <div className="h-16 flex justify-center items-center text-black">
       <button
         onClick={scroll}
-        className="flex flex-col items-center gap-2 text-sm tracking-wider transition-opacity hover:opacity-60 cursor-pointer mb-4"
+        className="flex flex-col items-center gap-2 tracking-wider transition-opacity hover:opacity-60 cursor-pointer"
         aria-label={label}
       >
-        <span className="font-mono font-semibold">{label}</span>
-        <ChevronDown className="h-6 w-6 animate-bounce" strokeWidth={1} />
+        <span className="text-xs md:text-sm font-mono font-light tracking-wider">{label}</span>
+        <ChevronDown className="size-5 md:size-6 animate-bounce" strokeWidth={1} />
       </button>
     </div>
   )

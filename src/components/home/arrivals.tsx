@@ -1,17 +1,62 @@
-import { arrivals } from "../../lib/products"
-import Product from "../product/product"
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Arrivals = () => {
+  const banners = [
+    { image_url: "01.png", link: "/shop/tops" },
+    { image_url: "02.png", link: "/shop/bottoms" },
+    { image_url: "03.png", link: "/shop/accessories" },
+  ];
+
+  const [index, setIndex] = useState(0);
+
+  const goLeft = () => setIndex(index > 0 ? index - 1 : banners.length - 1);
+  const goRight = () => setIndex(index < banners.length - 1 ? index + 1 : 0);
+
+  const styleBtn = `
+    w-9 h-9 bg-white/50 backdrop-blur
+    flex justify-center items-center
+    border border-neutral-500/50 hover:border-neutral-700
+    transition-colors cursor-pointer
+  `;
+
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center gap-6 lg:gap-10">
-      <label className="text-lg">Arrivals</label>
-      <div className="w-3/4 md:w-3/5 lg:w-4/5">
-        <div className="flex grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {arrivals.map((product) => (
-            <Product key={product.id} product={product} onlyImage />
+    <div className="flex flex-col justify-between">
+      <div className="w-full relative flex">
+        {/* Slides */}
+        <div className="relative w-[100vw] aspect-[3/4] md:aspect-[16/6] overflow-hidden">
+          {banners.map((banner, i) => (
+            <Link to={banner.link} key={"banner-" + i}>
+              <img
+                src={`images/banners/arrivals/${banner.image_url}`}
+                alt={`banner ${i}`}
+                className={`
+                absolute inset-0 size-full object-cover
+                transition-opacity duration-500 ease-in-out
+                ${i === index ? "opacity-100 z-10" : "opacity-0 z-0"}
+              `}
+              />
+            </Link>
           ))}
         </div>
+
+        {/* Buttons */}
+        <div className="absolute z-20 bottom-2 right-2 md:bottom-4 md:right-4">
+          <div className="flex items-center gap-1 p-1">
+            <button className={styleBtn} onClick={goLeft}>
+              <ChevronLeft size={24} strokeWidth={1.3} className="text-neutral-700" />
+            </button>
+            <button className={styleBtn} onClick={goRight}>
+              <ChevronRight size={24} strokeWidth={1.3} className="text-neutral-700" />
+            </button>
+          </div>
+        </div>
       </div>
+
     </div>
   )
 }
+
+// a gritaria dos desperdícios, ódio da representação
+// não podem se desconvecer pelo adestramento cultural

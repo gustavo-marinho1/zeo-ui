@@ -1,15 +1,22 @@
 import { Link } from "react-router-dom";
 import { ShopOptions } from "./shop-options";
 import { useState } from "react";
+import { SideBar } from "../sidebar/sidebar";
 
 export const LeftCorner = () => {
   const [displayShopOptions, setDisplayShopOptions] = useState(false);
 
-  const styleBtn = `cursor-pointer border border-black/40 hover:border-black transition-colors rounded-md px-1.5 py-0.5`;
+  const styleBtn = `
+    cursor-pointer px-1.5 py-0.5
+    border border-black/30 hover:border-black/60
+    transition-colors
+  `;
 
   return (
-    <>
-      <div className="flex items-center gap-2">
+    <div className="h-full flex items-center">
+      <SideBar />
+
+      <div className="hidden md:flex items-center gap-1">
         <Link to="/arrivals">
           <button className={styleBtn}>
             <span className="text-sm">Arrivals</span>
@@ -30,6 +37,6 @@ export const LeftCorner = () => {
       {displayShopOptions && (
         <ShopOptions close={() => setDisplayShopOptions(false)} />
       )}
-    </>
+    </div>
   )
 }

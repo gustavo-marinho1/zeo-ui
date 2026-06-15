@@ -13,7 +13,7 @@ const hd01: ProductType = {
   name: "HOODIE 01",
   name_url: "hd-01",
   description: "HOODIE 01",
-  images: ["01.png"],
+  images: ["01.png", "02.png"],
   price: 435.00,
   category: ["TOPS", "HOODIES"]
 }
@@ -203,7 +203,7 @@ const pn02: ProductType = {
   name: "PANTS 02",
   name_url: "pn-02",
   description: "PANTS 02",
-  images: ["01.png"],
+  images: ["01.png", "02.png"],
   price: 435.00,
   category: ["BOTTOMS", "PANTS"]
 }
@@ -352,7 +352,7 @@ const sn06: ProductType = {
   id: "sn06",
   name: "SNEAKERS 06",
   name_url: "sn-06",
-  images: ["01.png"],
+  images: ["01.png", "02.png"],
   description: "SNEAKERS 06",
   price: 435.00,
   category: ["FOOTWEAR", "SNEAKERS"]
@@ -392,7 +392,7 @@ const ts03: ProductType = {
   id: "ts03",
   name: "T-SHIRT 03",
   name_url: "ts-03",
-  images: ["01.png"],
+  images: ["01.png", "02.png"],
   description: "T-SHIRT 03",
   price: 435.00,
   category: ["TOPS", "T-SHIRTS"]
@@ -442,7 +442,7 @@ const ha01: ProductType = {
   id: "ha01",
   name: "HAT 01",
   name_url: "ha-01",
-  images: ["01.png"],
+  images: ["01.png", "02.png"],
   description: "HAT 01",
   price: 435.00,
   category: ["ACCESSORIES", "HATS"]
