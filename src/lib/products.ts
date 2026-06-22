@@ -1,11 +1,12 @@
 export type ProductType = {
   id: string,
-  name: string
-  name_url: string
-  price: number
+  name: string,
+  name_url: string,
+  price: number,
   description: string,
-  category: string[]
-  images: string[]
+  sizes: string[],
+  category: string[],
+  images: string[],
 }
 
 const hd01: ProductType = {
@@ -13,6 +14,7 @@ const hd01: ProductType = {
   name: "HOODIE 01",
   name_url: "hd-01",
   description: "HOODIE 01",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png", "02.png"],
   price: 435.00,
   category: ["TOPS", "HOODIES"]
@@ -23,6 +25,7 @@ const hd02: ProductType = {
   name: "HOODIE 02",
   name_url: "hd-02",
   description: "HOODIE 02",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   price: 435.00,
   category: ["TOPS", "HOODIES"]
@@ -32,6 +35,7 @@ const hd03: ProductType = {
   id: "hd03",
   name: "HOODIE 03",
   name_url: "hd-03",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "HOODIE 03",
   price: 435.00,
@@ -42,6 +46,7 @@ const hd04: ProductType = {
   id: "hd04",
   name: "HOODIE 04",
   name_url: "hd-04",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "HOODIE 04",
   price: 435.00,
@@ -52,6 +57,7 @@ const hd05: ProductType = {
   id: "hd05",
   name: "HOODIE 05",
   name_url: "hd-05",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "HOODIE 05",
   price: 435.00,
@@ -63,6 +69,7 @@ const hd06: ProductType = {
   name: "HOODIE 06",
   name_url: "hd-06",
   description: "HOODIE 06",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   price: 435.00,
   category: ["TOPS", "HOODIES"]
@@ -73,6 +80,7 @@ const jc01: ProductType = {
   name: "JACKET 01",
   name_url: "jc-01",
   description: "JACKET 01",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   price: 435.00,
   category: ["TOPS", "JACKETS"]
@@ -83,6 +91,7 @@ const jc02: ProductType = {
   name: "JACKET 02",
   name_url: "jc-02",
   description: "JACKET 02",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   price: 435.00,
   category: ["TOPS", "JACKETS"]
@@ -92,6 +101,7 @@ const jc03: ProductType = {
   id: "jc03",
   name: "JACKET 03",
   name_url: "jc-03",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "JACKET 03",
   price: 435.00,
@@ -103,6 +113,7 @@ const jc04: ProductType = {
   name: "JACKET 04",
   name_url: "jc-04",
   description: "JACKET 04",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   price: 435.00,
   category: ["TOPS", "JACKETS"]
@@ -113,6 +124,7 @@ const ls01: ProductType = {
   name: "LONG SLEEVE 01",
   name_url: "ls-01",
   description: "LONG SLEEVE 01",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   price: 435.00,
   category: ["TOPS", "LONG-SLEEVES"]
@@ -123,6 +135,7 @@ const ls02: ProductType = {
   name: "LONG SLEEVE 02",
   name_url: "ls-02",
   description: "LONG SLEEVE 02",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   price: 435.00,
   category: ["TOPS", "LONG-SLEEVES"]
@@ -132,18 +145,9 @@ const ls03: ProductType = {
   id: "ls03",
   name: "LONG SLEEVE 03",
   name_url: "ls-03",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "LONG SLEEVE 03",
-  price: 435.00,
-  category: ["TOPS", "LONG-SLEEVES"]
-}
-
-const ls04: ProductType = {
-  id: "ls04",
-  name: "LONG SLEEVE 04",
-  name_url: "ls-04",
-  images: ["01.png"],
-  description: "LONG SLEEVE 04",
   price: 435.00,
   category: ["TOPS", "LONG-SLEEVES"]
 }
@@ -153,6 +157,7 @@ const ct01: ProductType = {
   name: "COAT 01",
   name_url: "ct-01",
   description: "COAT 01",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   price: 435.00,
   category: ["TOPS", "COATS"]
@@ -163,6 +168,7 @@ const ct02: ProductType = {
   name: "COAT 02",
   name_url: "ct-02",
   description: "COAT 02",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   price: 435.00,
   category: ["TOPS", "COATS"]
@@ -172,6 +178,7 @@ const ct03: ProductType = {
   id: "ct03",
   name: "COAT 03",
   name_url: "ct-03",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "COAT 03",
   price: 435.00,
@@ -182,6 +189,7 @@ const ct04: ProductType = {
   id: "ct04",
   name: "COAT 04",
   name_url: "ct-04",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "COAT 04",
   price: 435.00,
@@ -193,6 +201,7 @@ const pn01: ProductType = {
   name: "PANTS 01",
   name_url: "pn-01",
   description: "PANTS 01",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   price: 435.00,
   category: ["BOTTOMS", "PANTS"]
@@ -203,6 +212,7 @@ const pn02: ProductType = {
   name: "PANTS 02",
   name_url: "pn-02",
   description: "PANTS 02",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png", "02.png"],
   price: 435.00,
   category: ["BOTTOMS", "PANTS"]
@@ -212,6 +222,7 @@ const pn03: ProductType = {
   id: "pn03",
   name: "PANTS 03",
   name_url: "pn-03",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "PANTS 03",
   price: 435.00,
@@ -222,6 +233,7 @@ const pn04: ProductType = {
   id: "pn04",
   name: "PANTS 04",
   name_url: "pn-04",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "PANTS 04",
   price: 435.00,
@@ -232,6 +244,7 @@ const pn05: ProductType = {
   id: "pn05",
   name: "PANTS 05",
   name_url: "pn-05",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "PANTS 05",
   price: 435.00,
@@ -242,6 +255,7 @@ const pn06: ProductType = {
   id: "pn06",
   name: "PANTS 06",
   name_url: "pn-06",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "PANTS 06",
   price: 435.00,
@@ -252,6 +266,7 @@ const pn07: ProductType = {
   id: "pn07",
   name: "PANTS 07",
   name_url: "pn-07",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "PANTS 07",
   price: 435.00,
@@ -263,6 +278,7 @@ const bt01: ProductType = {
   name: "BOOTS 01",
   name_url: "bt-01",
   description: "BOOTS 01",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   price: 435.00,
   category: ["FOOTWEAR", "BOOTS"]
@@ -273,6 +289,7 @@ const bt02: ProductType = {
   name: "BOOTS 02",
   name_url: "bt-02",
   description: "BOOTS 02",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   price: 435.00,
   category: ["FOOTWEAR", "BOOTS"]
@@ -283,16 +300,7 @@ const bt03: ProductType = {
   name: "BOOTS 03",
   name_url: "bt-03",
   description: "BOOTS 03",
-  images: ["01.png"],
-  price: 435.00,
-  category: ["FOOTWEAR", "BOOTS"]
-}
-
-const bt04: ProductType = {
-  id: "bt04",
-  name: "BOOTS 04",
-  name_url: "bt-04",
-  description: "BOOTS 04",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   price: 435.00,
   category: ["FOOTWEAR", "BOOTS"]
@@ -302,8 +310,9 @@ const sn01: ProductType = {
   id: "sn01",
   name: "SNEAKERS 01",
   name_url: "sn-01",
-  images: ["01.png"],
   description: "SNEAKERS 01",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
   price: 435.00,
   category: ["FOOTWEAR", "SNEAKERS"]
 }
@@ -312,8 +321,9 @@ const sn02: ProductType = {
   id: "sn02",
   name: "SNEAKERS 02",
   name_url: "sn-02",
-  images: ["01.png"],
   description: "SNEAKERS 02",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
   price: 435.00,
   category: ["FOOTWEAR", "SNEAKERS"]
 }
@@ -322,8 +332,9 @@ const sn03: ProductType = {
   id: "sn03",
   name: "SNEAKERS 03",
   name_url: "sn-03",
-  images: ["01.png"],
   description: "SNEAKERS 03",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
   price: 435.00,
   category: ["FOOTWEAR", "SNEAKERS"]
 }
@@ -332,8 +343,9 @@ const sn04: ProductType = {
   id: "sn04",
   name: "SNEAKERS 04",
   name_url: "sn-04",
-  images: ["01.png"],
   description: "SNEAKERS 04",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
   price: 435.00,
   category: ["FOOTWEAR", "SNEAKERS"]
 }
@@ -342,8 +354,9 @@ const sn05: ProductType = {
   id: "sn05",
   name: "SNEAKERS 05",
   name_url: "sn-05",
-  images: ["01.png"],
   description: "SNEAKERS 05",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
   price: 435.00,
   category: ["FOOTWEAR", "SNEAKERS"]
 }
@@ -352,18 +365,9 @@ const sn06: ProductType = {
   id: "sn06",
   name: "SNEAKERS 06",
   name_url: "sn-06",
-  images: ["01.png", "02.png"],
   description: "SNEAKERS 06",
-  price: 435.00,
-  category: ["FOOTWEAR", "SNEAKERS"]
-}
-
-const sn07: ProductType = {
-  id: "sn07",
-  name: "SNEAKERS 07",
-  name_url: "sn-07",
-  images: ["01.png"],
-  description: "SNEAKERS 07",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png", "02.png"],
   price: 435.00,
   category: ["FOOTWEAR", "SNEAKERS"]
 }
@@ -372,8 +376,9 @@ const ts01: ProductType = {
   id: "ts01",
   name: "T-SHIRT 01",
   name_url: "ts-01",
-  images: ["01.png"],
   description: "T-SHIRT 01",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
   price: 435.00,
   category: ["TOPS", "T-SHIRTS"]
 }
@@ -382,8 +387,9 @@ const ts02: ProductType = {
   id: "ts02",
   name: "T-SHIRT 02",
   name_url: "ts-02",
-  images: ["01.png"],
   description: "T-SHIRT 02",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
   price: 435.00,
   category: ["TOPS", "T-SHIRTS"]
 }
@@ -392,8 +398,9 @@ const ts03: ProductType = {
   id: "ts03",
   name: "T-SHIRT 03",
   name_url: "ts-03",
-  images: ["01.png", "02.png"],
   description: "T-SHIRT 03",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png", "02.png"],
   price: 435.00,
   category: ["TOPS", "T-SHIRTS"]
 }
@@ -403,6 +410,7 @@ const ts04: ProductType = {
   name: "T-SHIRT 04",
   name_url: "ts-04",
   description: "T-SHIRT 04",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   price: 435.00,
   category: ["TOPS", "T-SHIRTS"]
@@ -412,8 +420,9 @@ const ts05: ProductType = {
   id: "ts05",
   name: "T-SHIRT 05",
   name_url: "ts-05",
-  images: ["01.png"],
   description: "T-SHIRT 05",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
   price: 435.00,
   category: ["TOPS", "T-SHIRTS"]
 }
@@ -422,8 +431,9 @@ const ts06: ProductType = {
   id: "ts06",
   name: "T-SHIRT 06",
   name_url: "ts-06",
-  images: ["01.png"],
   description: "T-SHIRT 06",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
   price: 435.00,
   category: ["TOPS", "T-SHIRTS"]
 }
@@ -432,8 +442,9 @@ const ts07: ProductType = {
   id: "ts07",
   name: "T-SHIRT 07",
   name_url: "ts-07",
-  images: ["01.png"],
   description: "T-SHIRT 07",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
   price: 435.00,
   category: ["TOPS", "T-SHIRTS"]
 }
@@ -442,8 +453,9 @@ const ha01: ProductType = {
   id: "ha01",
   name: "HAT 01",
   name_url: "ha-01",
-  images: ["01.png", "02.png"],
   description: "HAT 01",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png", "02.png"],
   price: 435.00,
   category: ["ACCESSORIES", "HATS"]
 }
@@ -452,8 +464,9 @@ const ha02: ProductType = {
   id: "ha02",
   name: "HAT 02",
   name_url: "ha-02",
-  images: ["01.png"],
   description: "HAT 02",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
   price: 435.00,
   category: ["ACCESSORIES", "HATS"]
 }
@@ -462,8 +475,9 @@ const gs01: ProductType = {
   id: "gs01",
   name: "GLASSES 01",
   name_url: "gs-01",
-  images: ["01.png"],
   description: "GLASSES 01",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
   price: 435.00,
   category: ["ACCESSORIES", "GLASSES"]
 }
@@ -472,8 +486,9 @@ const gs02: ProductType = {
   id: "gs02",
   name: "GLASSES 02",
   name_url: "gs-02",
-  images: ["01.png"],
   description: "GLASSES 02",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
   price: 435.00,
   category: ["ACCESSORIES", "GLASSES"]
 }
@@ -504,8 +519,7 @@ export const jackets: ProductType[] = [
 export const long_sleeves: ProductType[] = [
   ls01,
   ls02,
-  ls03,
-  ls04
+  ls03
 ];
 
 export const pants: ProductType[] = [
@@ -523,8 +537,7 @@ export const shorts: ProductType[] = [];
 export const boots: ProductType[] = [
   bt01,
   bt02,
-  bt03,
-  bt04
+  bt03
 ];
 
 export const sneakers: ProductType[] = [
@@ -533,8 +546,7 @@ export const sneakers: ProductType[] = [
   sn03,
   sn04,
   sn05,
-  sn06,
-  sn07
+  sn06
 ];
 
 export const tshirts: ProductType[] = [
@@ -569,7 +581,6 @@ export const products: ProductType[] = [
   ...hats,
   ...boots,
   ...coats,
-  ...jackets,
 ];
 
 export const tops: ProductType[] = [
@@ -596,10 +607,14 @@ export const accessories: ProductType[] = [
 ];
 
 export const arrivals: ProductType[] = [
-  hd05,
-  pn01,
-  sn02,
-  sn03,
+  hd06,
+  jc04,
+  ls01,
+  ls02,
+  pn05,
+  pn06,
+  ts05,
+  ts07
 ];
 
 export const seasonal: ProductType[] = [

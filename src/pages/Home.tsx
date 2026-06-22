@@ -5,6 +5,7 @@ import Footer from "../components/footer/footer";
 import { Arrivals } from "../components/home/arrivals";
 import { Categories } from "../components/home/categories";
 import Hero from "../components/home/hero";
+import { New } from "@/components/home/new";
 
 export default function Home() {
   const exploreRef = useRef<HTMLElement>(null);
@@ -23,7 +24,7 @@ export default function Home() {
         <ScrolldownButton label="Explore" scroll={scrollToExplore} />
       </div>
 
-      <main className="pt-16 flex flex-col gap-0.5" ref={exploreRef}>
+      <main className="pt-16 flex flex-col" ref={exploreRef}>
         <section>
           <Arrivals />
         </section>
@@ -32,9 +33,8 @@ export default function Home() {
           <Categories />
         </section>
 
-        <section className="relative w-full min-h-[70vh] max-h-[80vh] flex">
-          <div className="w-full flex-[1] flex items-center bg-gradient-to-br from-neutral-900 via-neutral-900/93 to-neutral-900/98">
-          </div>
+        <section className="py-4 md:py-8">
+          <New />
         </section>
       </main>
 
