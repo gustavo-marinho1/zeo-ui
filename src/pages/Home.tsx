@@ -1,41 +1,39 @@
-import { useRef } from "react";
 import Header from "../components/header/header";
-import ScrolldownButton from "../components/home/scrolldown-btn";
 import Footer from "../components/footer/footer";
 import { Arrivals } from "../components/home/arrivals";
-import { Categories } from "../components/home/categories";
+import { BoxCategory } from "../components/home/categories";
 import Hero from "../components/home/hero";
 import { New } from "@/components/home/new";
 
 export default function Home() {
-  const exploreRef = useRef<HTMLElement>(null);
-
-  const scrollToExplore = () => {
-    exploreRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <>
-      <div className="relative w-full min-h-[100vh] flex flex-col justify-between">
+      <div className="fixed z-30 w-full bg-neutral-100">
         <Header />
-        <div className="w-full flex-[1] flex items-center mt-16">
-          <Hero />
-        </div>
-        <ScrolldownButton label="Explore" scroll={scrollToExplore} />
       </div>
 
-      <main className="pt-16 flex flex-col" ref={exploreRef}>
-        <section>
-          <Arrivals />
-        </section>
+      <main className="flex flex-col mb-20">
+        <div className="relative w-full flex flex-col justify-between">
+          <Hero />
+        </div>
 
-        <section>
-          <Categories />
-        </section>
+        <div className="px-8 sm:px-12 md:px-16 xl:px-24 2xl:px-36">
+          <section className="py-8 md:py-16">
+            <New />
+          </section>
 
-        <section className="py-4 md:py-8">
-          <New />
-        </section>
+          <section className="">
+            <div className="w-full h-full grid grid-cols-2 md:grid-cols-4 gap-1">
+              <div className="col-span-full">
+                <Arrivals />
+              </div>
+              <BoxCategory name="tops" link="/shop/tops" />
+              <BoxCategory name="bottoms" link="/shop/bottoms" />
+              <BoxCategory name="footwear" link="/shop/footwear" />
+              <BoxCategory name="accessories" link="/shop/accessories" />
+            </div>
+          </section>
+        </div>
       </main>
 
       <Footer />

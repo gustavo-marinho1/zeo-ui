@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 export const Arrivals = () => {
   const banners = [
-    { image_url: "01.png", link: "/shop/tops" },
-    { image_url: "02.png", link: "/shop/bottoms" }
+    { image_url: "02.png", link: "/shop/tops" },
+    { image_url: "01.png", link: "/shop/bottoms" }
   ];
 
   const [index, setIndex] = useState(0);

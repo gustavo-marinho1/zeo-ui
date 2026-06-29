@@ -4,14 +4,14 @@ import { RightCorner } from "./right-corner";
 
 const Header = () => {
   return (
-    <header className="fixed w-full h-16 z-30 backdrop-blur">
-      <div className="h-full flex justify-between items-center px-4 bg-white/20">
+    <header className="w-full h-16 px-4">
+      <div className="h-full flex justify-between items-center">
 
-        <div className="w-1/3">
+        <div className="h-fit w-1/3">
           <LeftCorner />
         </div>
 
-        <div className="h-full absolute left-1/2 -translate-x-1/2 overflow-hidden">
+        <div className="absolute left-1/2 -translate-x-1/2">
           <Logo />
         </div>
 

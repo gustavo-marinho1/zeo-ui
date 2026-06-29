@@ -13,7 +13,7 @@ export const LeftCorner = () => {
   `;
 
   return (
-    <div className="h-full flex items-center">
+    <div className="flex items-center">
       <SideBar />
 
       <div className="hidden md:flex items-center gap-1">

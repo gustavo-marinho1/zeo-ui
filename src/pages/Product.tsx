@@ -33,9 +33,11 @@ export default function Product() {
 
   return (
     <>
-      <Header />
+      <div className="fixed z-30 w-full bg-white/50">
+        <Header />
+      </div>
 
-      <main className="min-h-screen pt-16 flex">
+      <main className="min-h-screen flex">
         {loading ? (
           <div className="flex-1 flex justify-center items-center">
             <span className="text-lg animate-pulse">Loading...</span>
