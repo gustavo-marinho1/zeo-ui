@@ -7,7 +7,7 @@ interface Props {
 
 const ScrolldownButton = ({ label, scroll }: Props) => {
   return (
-    <div className="h-16 flex justify-center items-center text-black">
+    <div className="h-16 flex justify-center items-center text-black bg-white rounded-md px-4">
       <button
         onClick={scroll}
         className="flex flex-col items-center gap-2 tracking-wider transition-opacity hover:opacity-60 cursor-pointer"

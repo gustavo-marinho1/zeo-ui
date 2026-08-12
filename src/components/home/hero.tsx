@@ -1,14 +1,60 @@
+import { useEffect, useState } from "react";
+
 const Hero = () => {
+  const banners = [
+    { image_url: "01.png", alt: "Banner 01" },
+    { image_url: "02.png", alt: "Banner 02" },
+    { image_url: "03.png", alt: "Banner 03" }
+  ];
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex(index < banners.length - 1 ? index + 1 : 0);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [index]);
+
   return (
-    <div className="h-[50vh] min-h-[350px] flex justify-center items-center bg-neutral-100">
-      <div className="h-full flex justify-center items-center">
-        {/* <img
-          src="./images/banners/woman-banner-01.png"
-          alt="Hero-01"
-          className="h-full w-full object-cover"
-        /> */}
-        <span className="text-8xl font-semibold uppercase">New Age</span>
-      </div>
+    <div className="w-full aspect-12/4 min-h-[500px] flex justify-center items-end bg-neutral-50 relative overflow-hidden">
+
+      {banners.map((banner, i) => (
+        <img
+          key={`banner-${i}`}
+          src={`./images/hero/${banner.image_url}`}
+          alt={banner.alt}
+          className={`
+            absolute inset-0 size-full object-cover
+            transition-opacity duration-500 ease-in-out
+            ${i === index ? "opacity-100 z-10" : "opacity-0 z-0"}
+          `}
+        />
+      ))}
+
+      {/* <img
+        src="./images/banners/12.jpg"
+        alt="Hero-02"
+        className="w-full object-cover"
+      />
+
+      <img
+        src="./images/banners/13.jpg"
+        alt="Hero-02"
+        className="w-full object-cover"
+      />
+
+      <img
+        src="./images/banners/02.png"
+        alt="Hero-02"
+        className="w-full object-cover"
+      />
+
+      <img
+        src="./images/banners/05.png"
+        alt="Hero-02"
+        className="w-full object-cover"
+      /> */}
     </div>
   )
 }

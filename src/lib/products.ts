@@ -190,7 +190,7 @@ const ct04: ProductType = {
   name: "COAT 04",
   name_url: "ct-04",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-  images: ["01.png"],
+  images: ["01.png", "02.png"],
   description: "COAT 04",
   price: 435.00,
   category: ["TOPS", "COATS"]

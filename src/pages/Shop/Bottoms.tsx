@@ -40,7 +40,7 @@ export default function Bottoms() {
     <>
       <Header />
 
-      <main className="min-h-screen py-20 px-4">
+      <main className="min-h-screen mt-5 mb-20 px-4">
         <div className="flex flex-col justify-center gap-10">
 
           <div className="flex flex-col gap-2">
