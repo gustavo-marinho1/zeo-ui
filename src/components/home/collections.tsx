@@ -1,33 +1,64 @@
 export const Collections = () => {
-  return (
-    <div className="w-full flex flex-col gap-4">
-      <label className="text-md font-light tracking-wide">Collections</label>
+    return (
+        <div className="w-full flex flex-col">
+            {/*<div className="px-2 pb-1">
+                <label className="text-md font-light tracking-wide">Collections</label>
+            </div>*/}
 
-      <div className="w-full flex flex-col md:flex-row gap-x-1 gap-y-2">
-        <div className="flex-[1]">
-          <img
-            src="./images/collections/11.jpg"
-            alt="Poster 01"
-            className="object-cover size-full"
-          />
-        </div>
+            <div className="w-full flex flex-col md:flex-row">
+                <div className="flex-[1]">
+                    <img
+                        src={`./images/collections/01.jpg`}
+                        alt="Collection 01"
+                        className="object-cover size-full"
+                        loading="lazy"
+                    />
+                </div>
+                <div className="flex-[1]">
+                    <img
+                        src={`./images/collections/02.jpg`}
+                        alt="Collection 02"
+                        className="object-cover size-full"
+                        loading="lazy"
+                    />
+                </div>
+                <div className="flex-[1]">
+                    <img
+                        src={`./images/collections/03.jpg`}
+                        alt="Collection 03"
+                        className="object-cover size-full"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
 
-        <div className="flex-[1]">
-          <img
-            src="./images/collections/02.jpg"
-            alt="Poster 02"
-            className="object-cover size-full"
-          />
-        </div>
+            <div className="w-full flex flex-col md:flex-row">
+                <div className="flex-[1]">
+                    <img
+                        src={`./images/collections/04.jpg`}
+                        alt="Collection 04"
+                        className="object-cover size-full"
+                        loading="lazy"
+                    />
+                </div>
+                <div className="flex-[1]">
+                    <img
+                        src={`./images/collections/05.jpg`}
+                        alt="Collection 05"
+                        className="object-cover size-full"
+                        loading="lazy"
+                    />
+                </div>
+                <div className="flex-[1]">
+                    <img
+                        src={`./images/collections/06.jpg`}
+                        alt="Collection 06"
+                        className="object-cover size-full"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
 
-        <div className="flex-[1]">
-          <img
-            src="./images/collections/03.jpg"
-            alt="Poster 03"
-            className="object-cover size-full"
-          />
         </div>
-      </div>
-    </div>
-  )
+    )
 }

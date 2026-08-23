@@ -2,21 +2,21 @@ import { LeftCorner } from "./left-corner";
 import { Logo } from "./logo";
 import { RightCorner } from "./right-corner";
 
-const Header = () => {
+const Header = ({ textBlack }: { textBlack?: boolean }) => {
   return (
-    <header className="w-full h-16 px-4">
+    <header className="w-full h-14 px-4">
       <div className="h-full flex justify-between items-center">
 
         <div className="h-fit w-1/3">
-          <LeftCorner />
+          <LeftCorner textBlack={textBlack} />
         </div>
 
         <div className="absolute left-1/2 -translate-x-1/2">
-          <Logo />
+          <Logo textBlack={textBlack} />
         </div>
 
         <div className="w-1/3">
-          <RightCorner />
+          <RightCorner textBlack={textBlack} />
         </div>
 
       </div>

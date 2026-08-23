@@ -5,7 +5,7 @@ import { arrivals } from "../lib/products";
 export default function Arrivals() {
   return (
     <>
-      <Header />
+      <Header textBlack />
 
       <main className="pt-17 flex justify-center">
         <div className="sm:w-3/4 md:w-5/6 lg:w-3/4 xl:w-3/5 2xl:w-3/6 p-10">

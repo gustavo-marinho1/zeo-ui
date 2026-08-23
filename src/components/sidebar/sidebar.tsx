@@ -12,8 +12,8 @@ import { Link } from "react-router-dom";
 export const SideBar = () => {
   return (
     <Sheet>
-      <SheetTrigger className="md:hidden" asChild>
-        <Menu size={22} strokeWidth={1.3} />
+      <SheetTrigger className="md:hidden cursor-pointer" asChild>
+        <Menu size={22} strokeWidth={1.5} color="white" />
       </SheetTrigger>
 
       <SheetContent side="left" className="bg-white border-none md:hidden gap-0">
@@ -56,7 +56,7 @@ export const SideBar = () => {
 
           <div className="flex flex-col gap-1">
             <span className="text-sm font-semibold">READY-TO-WEAR</span>
-            <div className="ml-4 flex flex-col gap-1">
+            <div className="ml-3 flex flex-col gap-1">
               <Link to="/shop/tops">
                 <span className="text-sm">Tops</span>
               </Link>
@@ -74,7 +74,7 @@ export const SideBar = () => {
 
           <div className="flex flex-col gap-1">
             <span className="text-sm font-semibold">COLLECTIONS</span>
-            <div className="ml-4 flex flex-col gap-1">
+            <div className="ml-3 flex flex-col gap-1">
               <Link to="/seasonal">
                 <span className="text-sm">Seasonal</span>
               </Link>

@@ -3,12 +3,12 @@ import { ShopOptions } from "./shop-options";
 import { useState } from "react";
 import { SideBar } from "../sidebar/sidebar";
 
-export const LeftCorner = () => {
+export const LeftCorner = ({ textBlack }: { textBlack?: boolean }) => {
   const [displayShopOptions, setDisplayShopOptions] = useState(false);
 
   const styleBtn = `
     cursor-pointer px-1.5 py-0.5
-    border border-black/30 hover:border-black/60
+    ${textBlack ? "border border-black/30 hover:border-black/60" : "text-white"}
     transition-colors
   `;
 

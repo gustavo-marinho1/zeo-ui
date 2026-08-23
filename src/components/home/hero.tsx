@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 const Hero = () => {
   const banners = [
     { image_url: "01.png", alt: "Banner 01" },
-    { image_url: "02.png", alt: "Banner 02" },
-    { image_url: "03.png", alt: "Banner 03" }
+    { image_url: "01.png", alt: "Banner 02" },
+    { image_url: "01.png", alt: "Banner 03" }
   ];
 
   const [index, setIndex] = useState(0);
@@ -17,12 +17,18 @@ const Hero = () => {
   }, [index]);
 
   return (
-    <div className="w-full aspect-12/4 min-h-[500px] flex justify-center items-end bg-neutral-50 relative overflow-hidden">
+    <div className="w-full aspect-3/4 md:aspect-5/3 lg:aspect-6/3 xl:aspect-16/6 min-h-[200px] flex justify-center items-end bg-neutral-50 relative overflow-hidden">
 
-      {banners.map((banner, i) => (
+      <img
+        src={`./images/hero/04.jpg`}
+        alt="Hero-01"
+        className="absolute inset-0 size-full object-cover brightness-80 opacity-90"
+      />
+
+      {/*{banners.map((banner, i) => (
         <img
           key={`banner-${i}`}
-          src={`./images/hero/${banner.image_url}`}
+          src={`./images/hero/eyes.png`}
           alt={banner.alt}
           className={`
             absolute inset-0 size-full object-cover
@@ -30,7 +36,7 @@ const Hero = () => {
             ${i === index ? "opacity-100 z-10" : "opacity-0 z-0"}
           `}
         />
-      ))}
+      ))*/}
 
       {/* <img
         src="./images/banners/12.jpg"

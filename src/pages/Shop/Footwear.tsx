@@ -38,7 +38,7 @@ export default function Footwear() {
 
   return (
     <>
-      <Header />
+      <Header textBlack />
 
       <main className="min-h-screen mt-5 mb-20 px-4">
         <div className="flex flex-col justify-center gap-10">

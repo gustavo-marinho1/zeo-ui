@@ -2,13 +2,15 @@ import { Link } from "react-router-dom"
 
 export const Categories = () => {
   return (
-    <div className="flex justify-center">
-      <div className="w-full py-0.5 h-full grid grid-cols-2 md:grid-cols-4 gap-0.5">
+    <div className="w-full flex flex-col">
+
+      <div className="w-full h-full grid grid-cols-2 md:grid-cols-4 gap-1">
         <BoxCategory name="tops" link="/shop/tops" />
         <BoxCategory name="bottoms" link="/shop/bottoms" />
         <BoxCategory name="footwear" link="/shop/footwear" />
         <BoxCategory name="accessories" link="/shop/accessories" />
       </div>
+
     </div>
   )
 }

@@ -4,7 +4,7 @@ import Footer from "../components/footer/footer";
 export default function Seasonal() {
   return (
     <>
-      <Header />
+      <Header textBlack />
 
       <main className="min-h-screen py-20 px-4">
         <div className="flex flex-col justify-center gap-10">

@@ -2,17 +2,21 @@ import { useEffect, useState } from "react";
 import Header from "../components/header/header";
 import { products, type ProductType } from "../lib/products";
 import Footer from "../components/footer/footer";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { currencyBRL } from "../services/format";
 
 export default function Product() {
   const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
   const [product, setState] = useState<ProductType>();
   const [selectedSize, setSelectedSize] = useState<string>('');
 
   useEffect(() => {
-    getProductById(id);
+    if (id) getProductById(id);
+    else navigate("/");
+
+    document.body.scroll({top: 0});
   }, [id]);
 
   function getProductById(id: string) {
@@ -33,9 +37,7 @@ export default function Product() {
 
   return (
     <>
-      <div className="fixed z-30 w-full bg-white/50">
-        <Header />
-      </div>
+      <Header textBlack />
 
       <main className="min-h-screen flex">
         {loading ? (
