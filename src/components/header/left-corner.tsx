@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { ShopOptions } from "./shop-options";
 import { useState } from "react";
 import { SideBar } from "../sidebar/sidebar";
+import { Shop } from "./shop";
 
 export const LeftCorner = ({ textBlack }: { textBlack?: boolean }) => {
-  const [displayShopOptions, setDisplayShopOptions] = useState(false);
+  const [shopOpen, setShopOpen] = useState(false);
 
   const styleBtn = `
     cursor-pointer px-1.5 py-0.5
@@ -23,9 +23,11 @@ export const LeftCorner = ({ textBlack }: { textBlack?: boolean }) => {
           </button>
         </Link>
 
-        <button className={styleBtn} onClick={() => setDisplayShopOptions(!displayShopOptions)}>
-          <span className="text-sm">SHOP</span>
-        </button>
+        <Shop open={shopOpen} setOpen={setShopOpen}>
+          <button className={styleBtn} onClick={() => setShopOpen(!shopOpen)}>
+            <span className="text-sm">SHOP</span>
+          </button>
+        </Shop>
 
         <Link to="/about">
           <button className={styleBtn}>
@@ -33,10 +35,6 @@ export const LeftCorner = ({ textBlack }: { textBlack?: boolean }) => {
           </button>
         </Link>
       </div>
-
-      {displayShopOptions && (
-        <ShopOptions close={() => setDisplayShopOptions(false)} />
-      )}
     </div>
   )
 }

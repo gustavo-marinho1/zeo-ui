@@ -3,7 +3,7 @@ import Product from "../product/product"
 
 export const Arrivals = () => {
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col gap-1">
 
       <div className="px-2 flex justify-center">
         <label className="text-md font-light tracking-wide">Arrivals</label>

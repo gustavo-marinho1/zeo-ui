@@ -6,7 +6,6 @@ import { Collections } from "@/components/home/collections";
 import Hero from "@/components/home/hero";
 
 export default function Home() {
-
   return (
     <>
       {/*<div className="fixed z-30 w-full hover:backdrop-blur-sm bg-white/25 hover:bg-white/55 transition-all duration-300 ease-in-out">
@@ -14,7 +13,7 @@ export default function Home() {
       </div>*/}
 
       <div className="fixed z-30 w-full p-2">
-        <div className="bg-olive-800/50 rounded-lg">
+        <div className="bg-olive-800/45 hover:bg-olive-800/60 transition-colors rounded-lg">
           <Header />
         </div>
       </div>
