@@ -42,7 +42,7 @@ export const Shop = ({ children, open, setOpen }: Props) => {
           </div>
 
           <div className="flex items-start">
-            <button className="cursor-pointer" onClick={() => close()}>
+            <button className="cursor-pointer" onClick={() => setOpen(false)}>
               <X size={18} />
             </button>
           </div>
