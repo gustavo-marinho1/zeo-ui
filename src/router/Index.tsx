@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import Error from "../pages/Error";
 import Arrivals from "../pages/Arrivals";
 import About from "../pages/About";
+import Search from "../pages/Search";
 import Product from "../pages/Product";
 import Tops from "../pages/Shop/Tops";
 import Bottoms from "../pages/Shop/Bottoms";
@@ -16,6 +17,7 @@ const routes = createBrowserRouter([
   { path: "/product/:id?", element: <Product /> },
   { path: "/arrivals", element: <Arrivals /> },
   { path: "/about", element: <About /> },
+  { path: "/search", element: <Search /> },
   { path: "/shop/tops", element: <Tops /> },
   { path: "/shop/bottoms", element: <Bottoms /> },
   { path: "/shop/footwear", element: <Footwear /> },

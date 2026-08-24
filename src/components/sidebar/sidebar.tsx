@@ -9,11 +9,11 @@ import {
 import { Handbag, Menu, User } from "lucide-react"
 import { Link } from "react-router-dom";
 
-export const SideBar = () => {
+export const SideBar = ({ textBlack }: { textBlack?: boolean }) => {
   return (
     <Sheet>
       <SheetTrigger className="md:hidden cursor-pointer" asChild>
-        <Menu size={22} strokeWidth={1.5} color="white" />
+        <Menu size={22} strokeWidth={1.5} color={textBlack ? "black" : "white"} />
       </SheetTrigger>
 
       <SheetContent side="left" className="bg-white border-none md:hidden gap-0">

@@ -44,7 +44,7 @@ export default function Footwear() {
         <div className="flex flex-col justify-center gap-10">
 
           <div className="flex flex-col gap-2">
-            <label className="text-lg">Footwear</label>
+            <label className="text-md">Footwear</label>
             <div className="">
               {filterOptions.map((option) => (
                 <button

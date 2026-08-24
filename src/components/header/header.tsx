@@ -2,7 +2,7 @@ import { LeftCorner } from "./left-corner";
 import { Logo } from "./logo";
 import { RightCorner } from "./right-corner";
 
-const Header = ({ textBlack }: { textBlack?: boolean }) => {
+const Header = ({ textBlack, hideSearch }: { textBlack?: boolean, hideSearch?: boolean }) => {
   return (
     <header className="w-full h-14 px-4">
       <div className="h-full flex justify-between items-center">
@@ -16,7 +16,7 @@ const Header = ({ textBlack }: { textBlack?: boolean }) => {
         </div>
 
         <div className="w-1/3">
-          <RightCorner textBlack={textBlack} />
+          <RightCorner textBlack={textBlack} hideSearch={hideSearch} />
         </div>
 
       </div>

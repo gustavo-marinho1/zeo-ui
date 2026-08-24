@@ -14,7 +14,7 @@ export const LeftCorner = ({ textBlack }: { textBlack?: boolean }) => {
 
   return (
     <div className="flex items-center">
-      <SideBar />
+      <SideBar textBlack={textBlack} />
 
       <div className="hidden md:flex items-center gap-1">
         <Link to="/arrivals">

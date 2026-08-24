@@ -48,7 +48,7 @@ export default function Accessories() {
         <div className="flex flex-col justify-center gap-10">
 
           <div className="flex flex-col gap-2">
-            <label className="text-lg">Accessories</label>
+            <label className="text-md">Accessories</label>
             <div className="">
               {filterOptions.map((option) => (
                 <button

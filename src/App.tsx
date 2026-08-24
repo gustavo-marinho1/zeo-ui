@@ -1,4 +1,4 @@
-import Router from './router/Index'
+import Router from './router/Index';
 
 function App() {
   return (
