@@ -23,15 +23,15 @@ export default function Home() {
           <Hero />
         </section>
 
-        <section className="mt-6">
+        <section className="mt-10">
           <Arrivals />
         </section>
 
-        <section className="mt-6">
+        <section className="mt-10">
           <Collections />
         </section>
 
-        <section className="mt-1">
+        <section className="mt-10">
           <Categories />
         </section>
       </main>

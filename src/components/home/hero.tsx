@@ -1,8 +1,9 @@
+import { useEffect, useState } from "react";
+
 const Hero = () => {
-  {/*const banners = [
-    { image_url: "01.png", alt: "Banner 01" },
-    { image_url: "01.png", alt: "Banner 02" },
-    { image_url: "01.png", alt: "Banner 03" }
+  const banners = [
+    { image_url: "01.jpg", image_url_m: "01m.jpg", alt: "Banner 01", brightness: "brightness-80" },
+    { image_url: "02.jpg", image_url_m: "02m.jpg", alt: "Banner 02", brightness: "brightness-90" }
   ];
 
   const [index, setIndex] = useState(0);
@@ -10,68 +11,47 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex(index < banners.length - 1 ? index + 1 : 0);
-    }, 5000);
+    }, 8000);
     return () => clearInterval(interval);
-  }, [index]);*/}
+  }, [index]);
 
   return (
     <div className="w-full aspect-3/4 md:aspect-5/3 lg:aspect-6/3 xl:aspect-16/6 min-h-[200px] flex justify-center items-end bg-neutral-50 relative overflow-hidden">
 
       {/* small */}
       <div className="md:hidden">
-        <img
-          src="./images/hero/01m.jpg"
-          alt="Hero-01"
-          className="absolute inset-0 size-full object-cover brightness-80"
-        />
+        {banners.map((banner, i) => (
+          <img
+            key={`banner-${i}`}
+            src={`./images/hero/${banner.image_url_m}`}
+            alt={banner.alt}
+            className={`
+            absolute inset-0
+            size-full object-cover ${banner.brightness}
+            transition-opacity duration-500 ease-in-out
+            ${i === index ? "opacity-100 z-10" : "opacity-0 z-0"}
+          `}
+          />
+        ))}
       </div>
 
       {/* big */}
       <div className="hidden md:block">
-        <img
-          src="./images/hero/01.jpg"
-          alt="Hero-01"
-          className="absolute inset-0 size-full object-cover brightness-80"
-        />
-      </div>
-
-
-      {/*{banners.map((banner, i) => (
-        <img
-          key={`banner-${i}`}
-          src={`./images/hero/eyes.png`}
-          alt={banner.alt}
-          className={`
-            absolute inset-0 size-full object-cover
+        {banners.map((banner, i) => (
+          <img
+            key={`banner-${i}`}
+            src={`./images/hero/${banner.image_url}`}
+            alt={banner.alt}
+            className={`
+            absolute inset-0
+            size-full object-cover ${banner.brightness}
             transition-opacity duration-500 ease-in-out
             ${i === index ? "opacity-100 z-10" : "opacity-0 z-0"}
           `}
-        />
-      ))*/}
+          />
+        ))}
+      </div>
 
-      {/* <img
-        src="./images/banners/12.jpg"
-        alt="Hero-02"
-        className="w-full object-cover"
-      />
-
-      <img
-        src="./images/banners/13.jpg"
-        alt="Hero-02"
-        className="w-full object-cover"
-      />
-
-      <img
-        src="./images/banners/02.png"
-        alt="Hero-02"
-        className="w-full object-cover"
-      />
-
-      <img
-        src="./images/banners/05.png"
-        alt="Hero-02"
-        className="w-full object-cover"
-      /> */}
     </div>
   )
 }

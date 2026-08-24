@@ -32,33 +32,6 @@ export const Collections = () => {
                 </div>
             </div>
 
-            <div className="w-full flex flex-col md:flex-row">
-                <div className="flex-[1]">
-                    <img
-                        src={`./images/collections/04.jpg`}
-                        alt="Collection 04"
-                        className="object-cover size-full"
-                        loading="lazy"
-                    />
-                </div>
-                <div className="flex-[1]">
-                    <img
-                        src={`./images/collections/05.jpg`}
-                        alt="Collection 05"
-                        className="object-cover size-full"
-                        loading="lazy"
-                    />
-                </div>
-                <div className="flex-[1]">
-                    <img
-                        src={`./images/collections/06.jpg`}
-                        alt="Collection 06"
-                        className="object-cover size-full"
-                        loading="lazy"
-                    />
-                </div>
-            </div>
-
         </div>
     )
 }
