@@ -6,7 +6,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { Handbag, Menu, User } from "lucide-react"
+import { Menu } from "lucide-react"
 import { Link } from "react-router-dom";
 
 export const SideBar = ({ textBlack }: { textBlack?: boolean }) => {
@@ -25,7 +25,7 @@ export const SideBar = ({ textBlack }: { textBlack?: boolean }) => {
           </SheetTitle>
         </SheetHeader>
 
-        <div className="border-b border-neutral-300 w-full" />
+        {/* <div className="border-b border-neutral-300 w-full" />
 
         <div className="p-1 flex gap-1">
           <Link to="/" className="w-full py-2 bg-neutral-100">
@@ -40,7 +40,7 @@ export const SideBar = ({ textBlack }: { textBlack?: boolean }) => {
               <span className="text-sm">My account</span>
             </div>
           </Link>
-        </div>
+        </div> */}
 
         <div className="border-b border-neutral-300 w-full" />
 
