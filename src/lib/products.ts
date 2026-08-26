@@ -75,6 +75,17 @@ const hd06: ProductType = {
   category: ["TOPS", "HOODIES"]
 }
 
+export const hd07: ProductType = {
+  id: "hd07",
+  name: "HOODIE 07",
+  name_url: "hd-07",
+  description: "Crafted from heavyweight premium cotton, this oversized black hooded jacket boasts a unique concealed button-front. The standout feature is its intentional distressed finish, with strategic fraying and minor holes throughout, offering a rugged, aged appeal. It includes deep front pockets, a structured integrated hood, and generous ribbed cuffs. This garment combines utilitarian tech details with an edgy, worn-in aesthetic, creating a powerful contemporary piece.",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.jpg"],
+  price: 435.00,
+  category: ["TOPS", "HOODIES"]
+}
+
 const jc01: ProductType = {
   id: "jc01",
   name: "JACKET 01",
@@ -108,46 +119,46 @@ const jc03: ProductType = {
   category: ["TOPS", "JACKETS"]
 }
 
-const jc04: ProductType = {
+export const jc04: ProductType = {
   id: "jc04",
   name: "JACKET 04",
   name_url: "jc-04",
-  description: "JACKET 04",
+  description: "Elevate your outerwear with this black, bomber-style leather jacket. Crafted from a soft, subtly shiny leather, it offers a sophisticated take on a classic. Key details include a classic point collar, a clean concealed front closure, and two functional, large bellow pockets with structured flaps. Rib-knit cuffs and a matching ribbed hem provide a defined, sporty silhouette. A versatile piece that balances timeless style with contemporary design.",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   price: 435.00,
   category: ["TOPS", "JACKETS"]
 }
 
-const ls01: ProductType = {
+export const ls01: ProductType = {
   id: "ls01",
   name: "LONG SLEEVE 01",
   name_url: "ls-01",
-  description: "LONG SLEEVE 01",
+  description: "This essential layering piece is a classic, soft-jersey cotton long-sleeve t-shirt in deep black. It features a fitted, comfortable silhouette and clean seams. Designed for maximum versatility, this tee is a core wardrobe staple. The fine rib-knit collar and cuffs provide a structured look that holds its shape, making it perfect for building complex, edgy outfits. Pair it under oversized t-shirts, jackets, or leather pieces for a modern, gothic, or alternative vibe.",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   price: 435.00,
   category: ["TOPS", "LONG-SLEEVES"]
 }
 
-const ls02: ProductType = {
+export const ls02: ProductType = {
   id: "ls02",
   name: "LONG SLEEVE 02",
   name_url: "ls-02",
-  description: "LONG SLEEVE 02",
+  description: "This long-sleeved tee features a unique charcoal gray vintage pigment wash, giving it a soft, lived-in feel. A subtle, vertical tonal graphic, resembling abstract tribal or circuit-like lines, runs down the front and the length of the sleeves. Made from premium cotton, it offers a relaxed, slightly oversized fit and is designed for layering, blending a worn-in aesthetic with precise technical detail, perfect for the modern cyber-grunge look.",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   price: 435.00,
   category: ["TOPS", "LONG-SLEEVES"]
 }
 
-const ls03: ProductType = {
+export const ls03: ProductType = {
   id: "ls03",
   name: "LONG SLEEVE 03",
   name_url: "ls-03",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  description: "LONG SLEEVE 03",
+  description: "This oversized crewneck long-sleeved tee features a unique, heavily washed charcoal black finish, giving it a worn-in, vintage appearance. The dropped shoulder design enhances the relaxed silhouette, while exposed tonal seams along the shoulders and sleeves add a technical, edge-driven detail. Crafted from a premium heavy cotton, it offers a comfortable, structured drape, perfect for a high-concept streetwear aesthetic.",
   price: 435.00,
   category: ["TOPS", "LONG-SLEEVES"]
 }
@@ -251,13 +262,13 @@ const pn05: ProductType = {
   category: ["BOTTOMS", "PANTS"]
 }
 
-const pn06: ProductType = {
+export const pn06: ProductType = {
   id: "pn06",
   name: "PANTS 06",
   name_url: "pn-06",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  description: "PANTS 06",
+  description: "Matching the tee in its distressed character, these super-oversized cargo pants are made from heavily washed, light-grey denim. They feature an extremely baggy fit for ultimate comfort and a rebellious, anti-fit profile. Multiple large cargo pockets with flap closures are strategically placed on the legs, providing utilitarian storage and adding a rugged, dimensional look that defines the contemporary tech-wear style.",
   price: 435.00,
   category: ["BOTTOMS", "PANTS"]
 }
@@ -500,6 +511,7 @@ export const hoodies: ProductType[] = [
   hd04,
   hd05,
   hd06,
+  hd07
 ];
 
 export const coats: ProductType[] = [

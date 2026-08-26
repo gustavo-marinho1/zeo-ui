@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const banners = [
-    { image_url: "01.jpg", image_url_m: "01m.jpg", alt: "Banner 01", brightness: "brightness-80" },
-    { image_url: "02.jpg", image_url_m: "02m.jpg", alt: "Banner 02", brightness: "brightness-90" }
+    { url: "/collection/01", image_url: "01.jpg", image_url_m: "01/01.jpg", alt: "Banner 01", brightness: "brightness-80" },
+    { url: "/collection/02", image_url: "02.jpg", image_url_m: "02/01.jpg", alt: "Banner 02", brightness: "brightness-90" }
   ];
 
   const [index, setIndex] = useState(0);
@@ -21,34 +22,36 @@ const Hero = () => {
       {/* small */}
       <div className="md:hidden">
         {banners.map((banner, i) => (
-          <img
-            key={`banner-${i}`}
-            src={`./images/hero/${banner.image_url_m}`}
-            alt={banner.alt}
-            className={`
-            absolute inset-0
-            size-full object-cover ${banner.brightness}
-            transition-opacity duration-500 ease-in-out
-            ${i === index ? "opacity-100 z-10" : "opacity-0 z-0"}
-          `}
-          />
+          <Link to={banner.url} key={`banner-${i}`}>
+            <img
+              src={`./images/collections/${banner.image_url_m}`}
+              alt={banner.alt}
+              className={`
+                absolute inset-0
+                size-full object-cover ${banner.brightness}
+                transition-opacity duration-500 ease-in-out
+                ${i === index ? "opacity-100 z-10" : "opacity-0 z-0"}
+              `}
+            />
+          </Link>
         ))}
       </div>
 
       {/* big */}
       <div className="hidden md:block">
         {banners.map((banner, i) => (
-          <img
-            key={`banner-${i}`}
-            src={`./images/hero/${banner.image_url}`}
-            alt={banner.alt}
-            className={`
-            absolute inset-0
-            size-full object-cover ${banner.brightness}
-            transition-opacity duration-500 ease-in-out
-            ${i === index ? "opacity-100 z-10" : "opacity-0 z-0"}
-          `}
-          />
+          <Link to={banner.url} key={`banner-${i}`}>
+            <img
+              src={`./images/hero/${banner.image_url}`}
+              alt={banner.alt}
+              className={`
+                absolute inset-0
+                size-full object-cover ${banner.brightness}
+                transition-opacity duration-500 ease-in-out
+                ${i === index ? "opacity-100 z-10" : "opacity-0 z-0"}
+              `}
+            />
+          </Link>
         ))}
       </div>
 
