@@ -4,7 +4,7 @@ import { ProductGrid } from "@/components/home/product-group";
 import Product from "@/components/product/product";
 import { Input } from "@/components/ui/input";
 import { products, type ProductType } from "@/lib/products";
-import { SearchIcon } from "lucide-react";
+import { Loader, SearchIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
@@ -60,7 +60,7 @@ export default function Search() {
     } catch {
       setResults([]);
     } finally {
-      setLoading(false);
+      setTimeout(() => setLoading(false), 500);
     }
   }
 
@@ -100,7 +100,9 @@ export default function Search() {
           </div>
 
           {loading ? (
-            <div>Loading</div>
+            <div className="w-full flex justify-center py-16">
+              <Loader className="animate-spin" />
+            </div>
           ) : (
             (results.length === 0) ? (
               <div className="flex flex-col items-center justify-center">
