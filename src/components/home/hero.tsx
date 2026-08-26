@@ -1,10 +1,21 @@
+import { collection01, collection02 } from "@/lib/collections";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const Hero = () => {
+export default function Hero() {
   const banners = [
-    { url: "/collection/01", image_url: "01.jpg", image_url_m: "01/01.jpg", alt: "Banner 01", brightness: "brightness-80" },
-    { url: "/collection/02", image_url: "02.jpg", image_url_m: "02/01.jpg", alt: "Banner 02", brightness: "brightness-90" }
+    {
+      image_url: "01.jpg",
+      alt: "Banner 01",
+      brightness: "brightness-80",
+      collection: collection01
+    },
+    {
+      image_url: "02.jpg",
+      alt: "Banner 02",
+      brightness: "brightness-90",
+      collection: collection02
+    }
   ];
 
   const [index, setIndex] = useState(0);
@@ -22,9 +33,9 @@ const Hero = () => {
       {/* small */}
       <div className="md:hidden">
         {banners.map((banner, i) => (
-          <Link to={banner.url} key={`banner-${i}`}>
+          <Link to={`/collection/${banner.collection.id}`} key={`banner-${i}`}>
             <img
-              src={`./images/collections/${banner.image_url_m}`}
+              src={`./images/collections/${banner.collection.id}/${banner.collection.images[0]}`}
               alt={banner.alt}
               className={`
                 absolute inset-0
@@ -33,6 +44,17 @@ const Hero = () => {
                 ${i === index ? "opacity-100 z-10" : "opacity-0 z-0"}
               `}
             />
+
+            {i === index && (
+              <div className="absolute z-20 bottom-6 left-6 right-6">
+                <div className="w-full flex flex-col items-center gap-2 bg-neutral-900/30 hover:bg-neutral-900/40 rounded-lg py-3 px-4">
+                  <div className="text-lg text-white">
+                    {banner.collection.name}
+                  </div>
+                  <ExploreBtn />
+                </div>
+              </div>
+            )}
           </Link>
         ))}
       </div>
@@ -40,7 +62,7 @@ const Hero = () => {
       {/* big */}
       <div className="hidden md:block">
         {banners.map((banner, i) => (
-          <Link to={banner.url} key={`banner-${i}`}>
+          <Link to={`/collection/${banner.collection.id}`} key={`banner-${i}`}>
             <img
               src={`./images/hero/${banner.image_url}`}
               alt={banner.alt}
@@ -51,6 +73,20 @@ const Hero = () => {
                 ${i === index ? "opacity-100 z-10" : "opacity-0 z-0"}
               `}
             />
+
+            {i === index && (
+              <div className="absolute z-20 bottom-6 left-6">
+                <div className="w-fit xl:w-[600px] flex flex-col gap-2 bg-neutral-900/40 hover:bg-neutral-900/50 rounded-lg py-3 px-4">
+                  <div className="text-lg text-white">
+                    {banner.collection.name}
+                  </div>
+                  <div className="hidden xl:block text-sm text-neutral-200 font-light">
+                    {banner.collection.description}
+                  </div>
+                  <ExploreBtn />
+                </div>
+              </div>
+            )}
           </Link>
         ))}
       </div>
@@ -58,4 +94,9 @@ const Hero = () => {
     </div>
   )
 }
-export default Hero
+
+const ExploreBtn = () => {
+  return (
+    <button className="mt-2 w-64 bg-neutral-100 hover:bg-white border border-neutral-300 rounded-md px-2 py-1 text-black cursor-pointer">Explore</button>
+  )
+}

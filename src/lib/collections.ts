@@ -1,4 +1,4 @@
-import { hd07, jc04, ls01, ls02, ls03, pn06, type ProductType } from "./products";
+import { bt01, hd07, jc04, ls01, ls02, ls03, pn06, type ProductType } from "./products";
 
 export type CollectionType = {
   id: string,
@@ -21,7 +21,7 @@ export const collection02: CollectionType = {
   name: "Edgy Goth Layering Long Sleeve Tee",
   description: "This long-sleeve tee excels as a versatile foundation for edgy and alternative nightlife styles. It's the perfect layering choice for underground music venues, rock clubs, and dark-themed parties where a gothic, punk, or industrial-influenced aesthetic is key. The tee’s minimalist design also makes it great for styling for urban streetwear events, art gallery openings with a rebellious twist, or simply hanging out at a late-night cafe. For a true statement, pair it as shown with a distressed outer layer, a miniskirt, and combat boots.",
   images: ["01.jpg"],
-  products: [ls01]
+  products: [ls01, bt01]
 }
 
 export const collection03: CollectionType = {

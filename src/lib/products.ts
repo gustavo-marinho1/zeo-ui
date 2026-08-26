@@ -284,7 +284,7 @@ const pn07: ProductType = {
   category: ["BOTTOMS", "PANTS"]
 }
 
-const bt01: ProductType = {
+export const bt01: ProductType = {
   id: "bt01",
   name: "BOOTS 01",
   name_url: "bt-01",
