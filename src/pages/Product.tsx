@@ -86,7 +86,7 @@ export default function Product() {
                 {/* Information */}
                 <div className="flex flex-col gap-2 bg-neutral-100 p-5 mt-6">
                   <h4 className="text-md font-semibold">Product information</h4>
-                  <span className="text-md text-neutral-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, eius? Nemo laboriosam illo id, excepturi earum quam ullam incidunt, minima similique repudiandae nostrum aspernatur sit! Quod nam labore aliquid soluta!</span>
+                  <span className="text-md text-neutral-700">{product.description}</span>
                 </div>
               </div>
             </div>
