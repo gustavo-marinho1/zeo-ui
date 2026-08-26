@@ -8,10 +8,6 @@ import Hero from "@/components/home/hero";
 export default function Home() {
   return (
     <>
-      {/*<div className="fixed z-30 w-full hover:backdrop-blur-sm bg-white/25 hover:bg-white/55 transition-all duration-300 ease-in-out">
-        <Header />
-      </div>*/}
-
       <div className="fixed z-30 w-full p-2">
         <div className="bg-olive-800/45 hover:bg-olive-800/60 transition-colors rounded-lg">
           <Header />
@@ -23,7 +19,7 @@ export default function Home() {
           <Hero />
         </section>
 
-        <section className="mt-10">
+        <section className="mt-5">
           <Arrivals />
         </section>
 

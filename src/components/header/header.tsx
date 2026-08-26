@@ -2,9 +2,9 @@ import { LeftCorner } from "./left-corner";
 import { Logo } from "./logo";
 import { RightCorner } from "./right-corner";
 
-const Header = ({ textBlack, hideSearch }: { textBlack?: boolean, hideSearch?: boolean }) => {
+export default function Header({ textBlack, hideSearch }: { textBlack?: boolean, hideSearch?: boolean }) {
   return (
-    <header className="w-full h-14 px-4">
+    <header className="w-full h-13 px-4">
       <div className="h-full flex justify-between items-center">
 
         <div className="h-fit w-1/3">
@@ -23,5 +23,3 @@ const Header = ({ textBlack, hideSearch }: { textBlack?: boolean, hideSearch?: b
     </header>
   )
 }
-
-export default Header;
