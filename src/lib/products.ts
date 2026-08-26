@@ -16,7 +16,7 @@ const hd01: ProductType = {
   description: "HOODIE 01",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png", "02.png"],
-  price: 435.00,
+  price: 60.00,
   category: ["TOPS", "HOODIES"]
 }
 
@@ -27,7 +27,7 @@ const hd02: ProductType = {
   description: "HOODIE 02",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  price: 435.00,
+  price: 55.00,
   category: ["TOPS", "HOODIES"]
 }
 
@@ -38,7 +38,7 @@ const hd03: ProductType = {
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "HOODIE 03",
-  price: 435.00,
+  price: 55.00,
   category: ["TOPS", "HOODIES"]
 }
 
@@ -49,7 +49,7 @@ const hd04: ProductType = {
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "HOODIE 04",
-  price: 435.00,
+  price: 50.00,
   category: ["TOPS", "HOODIES"]
 }
 
@@ -60,7 +60,7 @@ const hd05: ProductType = {
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "HOODIE 05",
-  price: 435.00,
+  price: 58.00,
   category: ["TOPS", "HOODIES"]
 }
 
@@ -71,7 +71,7 @@ const hd06: ProductType = {
   description: "HOODIE 06",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  price: 435.00,
+  price: 58.00,
   category: ["TOPS", "HOODIES"]
 }
 
@@ -82,7 +82,7 @@ export const hd07: ProductType = {
   description: "Crafted from heavyweight premium cotton, this oversized black hooded jacket boasts a unique concealed button-front. The standout feature is its intentional distressed finish, with strategic fraying and minor holes throughout, offering a rugged, aged appeal. It includes deep front pockets, a structured integrated hood, and generous ribbed cuffs. This garment combines utilitarian tech details with an edgy, worn-in aesthetic, creating a powerful contemporary piece.",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.jpg"],
-  price: 435.00,
+  price: 78.00,
   category: ["TOPS", "HOODIES"]
 }
 
@@ -93,7 +93,7 @@ const jc01: ProductType = {
   description: "JACKET 01",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  price: 435.00,
+  price: 85.00,
   category: ["TOPS", "JACKETS"]
 }
 
@@ -104,7 +104,7 @@ const jc02: ProductType = {
   description: "JACKET 02",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  price: 435.00,
+  price: 85.00,
   category: ["TOPS", "JACKETS"]
 }
 
@@ -115,7 +115,7 @@ const jc03: ProductType = {
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "JACKET 03",
-  price: 435.00,
+  price: 60.00,
   category: ["TOPS", "JACKETS"]
 }
 
@@ -126,7 +126,7 @@ export const jc04: ProductType = {
   description: "Elevate your outerwear with this black, bomber-style leather jacket. Crafted from a soft, subtly shiny leather, it offers a sophisticated take on a classic. Key details include a classic point collar, a clean concealed front closure, and two functional, large bellow pockets with structured flaps. Rib-knit cuffs and a matching ribbed hem provide a defined, sporty silhouette. A versatile piece that balances timeless style with contemporary design.",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  price: 435.00,
+  price: 87.00,
   category: ["TOPS", "JACKETS"]
 }
 
@@ -137,7 +137,7 @@ export const ls01: ProductType = {
   description: "This essential layering piece is a classic, soft-jersey cotton long-sleeve t-shirt in deep black. It features a fitted, comfortable silhouette and clean seams. Designed for maximum versatility, this tee is a core wardrobe staple. The fine rib-knit collar and cuffs provide a structured look that holds its shape, making it perfect for building complex, edgy outfits. Pair it under oversized t-shirts, jackets, or leather pieces for a modern, gothic, or alternative vibe.",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  price: 435.00,
+  price: 44.00,
   category: ["TOPS", "LONG-SLEEVES"]
 }
 
@@ -148,7 +148,7 @@ export const ls02: ProductType = {
   description: "This long-sleeved tee features a unique charcoal gray vintage pigment wash, giving it a soft, lived-in feel. A subtle, vertical tonal graphic, resembling abstract tribal or circuit-like lines, runs down the front and the length of the sleeves. Made from premium cotton, it offers a relaxed, slightly oversized fit and is designed for layering, blending a worn-in aesthetic with precise technical detail, perfect for the modern cyber-grunge look.",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  price: 435.00,
+  price: 50.00,
   category: ["TOPS", "LONG-SLEEVES"]
 }
 
@@ -159,7 +159,7 @@ export const ls03: ProductType = {
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "This oversized crewneck long-sleeved tee features a unique, heavily washed charcoal black finish, giving it a worn-in, vintage appearance. The dropped shoulder design enhances the relaxed silhouette, while exposed tonal seams along the shoulders and sleeves add a technical, edge-driven detail. Crafted from a premium heavy cotton, it offers a comfortable, structured drape, perfect for a high-concept streetwear aesthetic.",
-  price: 435.00,
+  price: 48.00,
   category: ["TOPS", "LONG-SLEEVES"]
 }
 
@@ -170,7 +170,7 @@ const ct01: ProductType = {
   description: "COAT 01",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  price: 435.00,
+  price: 150.00,
   category: ["TOPS", "COATS"]
 }
 
@@ -181,7 +181,7 @@ const ct02: ProductType = {
   description: "COAT 02",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  price: 435.00,
+  price: 145.00,
   category: ["TOPS", "COATS"]
 }
 
@@ -192,7 +192,7 @@ const ct03: ProductType = {
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "COAT 03",
-  price: 435.00,
+  price: 152.00,
   category: ["TOPS", "COATS"]
 }
 
@@ -203,184 +203,8 @@ const ct04: ProductType = {
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png", "02.png"],
   description: "COAT 04",
-  price: 435.00,
+  price: 172.00,
   category: ["TOPS", "COATS"]
-}
-
-const pn01: ProductType = {
-  id: "pn01",
-  name: "PANTS 01",
-  name_url: "pn-01",
-  description: "PANTS 01",
-  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-  images: ["01.png"],
-  price: 435.00,
-  category: ["BOTTOMS", "PANTS"]
-}
-
-const pn02: ProductType = {
-  id: "pn02",
-  name: "PANTS 02",
-  name_url: "pn-02",
-  description: "PANTS 02",
-  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-  images: ["01.png", "02.png"],
-  price: 435.00,
-  category: ["BOTTOMS", "PANTS"]
-}
-
-const pn03: ProductType = {
-  id: "pn03",
-  name: "PANTS 03",
-  name_url: "pn-03",
-  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-  images: ["01.png"],
-  description: "PANTS 03",
-  price: 435.00,
-  category: ["BOTTOMS", "PANTS"]
-}
-
-const pn04: ProductType = {
-  id: "pn04",
-  name: "PANTS 04",
-  name_url: "pn-04",
-  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-  images: ["01.png"],
-  description: "PANTS 04",
-  price: 435.00,
-  category: ["BOTTOMS", "PANTS"]
-}
-
-const pn05: ProductType = {
-  id: "pn05",
-  name: "PANTS 05",
-  name_url: "pn-05",
-  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-  images: ["01.png"],
-  description: "PANTS 05",
-  price: 435.00,
-  category: ["BOTTOMS", "PANTS"]
-}
-
-export const pn06: ProductType = {
-  id: "pn06",
-  name: "PANTS 06",
-  name_url: "pn-06",
-  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-  images: ["01.png"],
-  description: "Matching the tee in its distressed character, these super-oversized cargo pants are made from heavily washed, light-grey denim. They feature an extremely baggy fit for ultimate comfort and a rebellious, anti-fit profile. Multiple large cargo pockets with flap closures are strategically placed on the legs, providing utilitarian storage and adding a rugged, dimensional look that defines the contemporary tech-wear style.",
-  price: 435.00,
-  category: ["BOTTOMS", "PANTS"]
-}
-
-const pn07: ProductType = {
-  id: "pn07",
-  name: "PANTS 07",
-  name_url: "pn-07",
-  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-  images: ["01.png"],
-  description: "PANTS 07",
-  price: 435.00,
-  category: ["BOTTOMS", "PANTS"]
-}
-
-export const bt01: ProductType = {
-  id: "bt01",
-  name: "BOOTS 01",
-  name_url: "bt-01",
-  description: "BOOTS 01",
-  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-  images: ["01.png"],
-  price: 435.00,
-  category: ["FOOTWEAR", "BOOTS"]
-}
-
-const bt02: ProductType = {
-  id: "bt02",
-  name: "BOOTS 02",
-  name_url: "bt-02",
-  description: "BOOTS 02",
-  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-  images: ["01.png"],
-  price: 435.00,
-  category: ["FOOTWEAR", "BOOTS"]
-}
-
-const bt03: ProductType = {
-  id: "bt03",
-  name: "BOOTS 03",
-  name_url: "bt-03",
-  description: "BOOTS 03",
-  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-  images: ["01.png"],
-  price: 435.00,
-  category: ["FOOTWEAR", "BOOTS"]
-}
-
-const sn01: ProductType = {
-  id: "sn01",
-  name: "SNEAKERS 01",
-  name_url: "sn-01",
-  description: "SNEAKERS 01",
-  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-  images: ["01.png"],
-  price: 435.00,
-  category: ["FOOTWEAR", "SNEAKERS"]
-}
-
-const sn02: ProductType = {
-  id: "sn02",
-  name: "SNEAKERS 02",
-  name_url: "sn-02",
-  description: "SNEAKERS 02",
-  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-  images: ["01.png"],
-  price: 435.00,
-  category: ["FOOTWEAR", "SNEAKERS"]
-}
-
-const sn03: ProductType = {
-  id: "sn03",
-  name: "SNEAKERS 03",
-  name_url: "sn-03",
-  description: "SNEAKERS 03",
-  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-  images: ["01.png"],
-  price: 435.00,
-  category: ["FOOTWEAR", "SNEAKERS"]
-}
-
-const sn04: ProductType = {
-  id: "sn04",
-  name: "SNEAKERS 04",
-  name_url: "sn-04",
-  description: "SNEAKERS 04",
-  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-  images: ["01.png"],
-  price: 435.00,
-  category: ["FOOTWEAR", "SNEAKERS"]
-}
-
-const sn05: ProductType = {
-  id: "sn05",
-  name: "SNEAKERS 05",
-  name_url: "sn-05",
-  description: "SNEAKERS 05",
-  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-  images: ["01.png"],
-  price: 435.00,
-  category: ["FOOTWEAR", "SNEAKERS"]
-}
-
-const sn06: ProductType = {
-  id: "sn06",
-  name: "SNEAKERS 06",
-  name_url: "sn-06",
-  description: "SNEAKERS 06",
-  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-  images: ["01.png", "02.png"],
-  price: 435.00,
-  category: ["FOOTWEAR", "SNEAKERS"]
 }
 
 const ts01: ProductType = {
@@ -390,7 +214,7 @@ const ts01: ProductType = {
   description: "T-SHIRT 01",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  price: 435.00,
+  price: 40.00,
   category: ["TOPS", "T-SHIRTS"]
 }
 
@@ -401,7 +225,7 @@ const ts02: ProductType = {
   description: "T-SHIRT 02",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  price: 435.00,
+  price: 38.00,
   category: ["TOPS", "T-SHIRTS"]
 }
 
@@ -412,7 +236,7 @@ const ts03: ProductType = {
   description: "T-SHIRT 03",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png", "02.png"],
-  price: 435.00,
+  price: 38.00,
   category: ["TOPS", "T-SHIRTS"]
 }
 
@@ -423,7 +247,7 @@ const ts04: ProductType = {
   description: "T-SHIRT 04",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  price: 435.00,
+  price: 35.00,
   category: ["TOPS", "T-SHIRTS"]
 }
 
@@ -434,7 +258,7 @@ const ts05: ProductType = {
   description: "T-SHIRT 05",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  price: 435.00,
+  price: 40.00,
   category: ["TOPS", "T-SHIRTS"]
 }
 
@@ -445,7 +269,7 @@ const ts06: ProductType = {
   description: "T-SHIRT 06",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  price: 435.00,
+  price: 39.00,
   category: ["TOPS", "T-SHIRTS"]
 }
 
@@ -456,8 +280,184 @@ const ts07: ProductType = {
   description: "T-SHIRT 07",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  price: 435.00,
+  price: 41.00,
   category: ["TOPS", "T-SHIRTS"]
+}
+
+const pn01: ProductType = {
+  id: "pn01",
+  name: "PANTS 01",
+  name_url: "pn-01",
+  description: "PANTS 01",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
+  price: 60.00,
+  category: ["BOTTOMS", "PANTS"]
+}
+
+const pn02: ProductType = {
+  id: "pn02",
+  name: "PANTS 02",
+  name_url: "pn-02",
+  description: "PANTS 02",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png", "02.png"],
+  price: 62.00,
+  category: ["BOTTOMS", "PANTS"]
+}
+
+const pn03: ProductType = {
+  id: "pn03",
+  name: "PANTS 03",
+  name_url: "pn-03",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
+  description: "PANTS 03",
+  price: 68.00,
+  category: ["BOTTOMS", "PANTS"]
+}
+
+const pn04: ProductType = {
+  id: "pn04",
+  name: "PANTS 04",
+  name_url: "pn-04",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
+  description: "PANTS 04",
+  price: 59.00,
+  category: ["BOTTOMS", "PANTS"]
+}
+
+const pn05: ProductType = {
+  id: "pn05",
+  name: "PANTS 05",
+  name_url: "pn-05",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
+  description: "PANTS 05",
+  price: 50.00,
+  category: ["BOTTOMS", "PANTS"]
+}
+
+export const pn06: ProductType = {
+  id: "pn06",
+  name: "PANTS 06",
+  name_url: "pn-06",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
+  description: "Matching the tee in its distressed character, these super-oversized cargo pants are made from heavily washed, light-grey denim. They feature an extremely baggy fit for ultimate comfort and a rebellious, anti-fit profile. Multiple large cargo pockets with flap closures are strategically placed on the legs, providing utilitarian storage and adding a rugged, dimensional look that defines the contemporary tech-wear style.",
+  price: 54.00,
+  category: ["BOTTOMS", "PANTS"]
+}
+
+const pn07: ProductType = {
+  id: "pn07",
+  name: "PANTS 07",
+  name_url: "pn-07",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
+  description: "PANTS 07",
+  price: 61.00,
+  category: ["BOTTOMS", "PANTS"]
+}
+
+const sn01: ProductType = {
+  id: "sn01",
+  name: "SNEAKERS 01",
+  name_url: "sn-01",
+  description: "SNEAKERS 01",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
+  price: 110.00,
+  category: ["FOOTWEAR", "SNEAKERS"]
+}
+
+const sn02: ProductType = {
+  id: "sn02",
+  name: "SNEAKERS 02",
+  name_url: "sn-02",
+  description: "SNEAKERS 02",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
+  price: 135.00,
+  category: ["FOOTWEAR", "SNEAKERS"]
+}
+
+const sn03: ProductType = {
+  id: "sn03",
+  name: "SNEAKERS 03",
+  name_url: "sn-03",
+  description: "SNEAKERS 03",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
+  price: 126.00,
+  category: ["FOOTWEAR", "SNEAKERS"]
+}
+
+const sn04: ProductType = {
+  id: "sn04",
+  name: "SNEAKERS 04",
+  name_url: "sn-04",
+  description: "SNEAKERS 04",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
+  price: 126.00,
+  category: ["FOOTWEAR", "SNEAKERS"]
+}
+
+const sn05: ProductType = {
+  id: "sn05",
+  name: "SNEAKERS 05",
+  name_url: "sn-05",
+  description: "SNEAKERS 05",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
+  price: 130.00,
+  category: ["FOOTWEAR", "SNEAKERS"]
+}
+
+const sn06: ProductType = {
+  id: "sn06",
+  name: "SNEAKERS 06",
+  name_url: "sn-06",
+  description: "SNEAKERS 06",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png", "02.png"],
+  price: 125.00,
+  category: ["FOOTWEAR", "SNEAKERS"]
+}
+
+export const bt01: ProductType = {
+  id: "bt01",
+  name: "BOOTS 01",
+  name_url: "bt-01",
+  description: "BOOTS 01",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
+  price: 145.00,
+  category: ["FOOTWEAR", "BOOTS"]
+}
+
+const bt02: ProductType = {
+  id: "bt02",
+  name: "BOOTS 02",
+  name_url: "bt-02",
+  description: "BOOTS 02",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
+  price: 139.00,
+  category: ["FOOTWEAR", "BOOTS"]
+}
+
+const bt03: ProductType = {
+  id: "bt03",
+  name: "BOOTS 03",
+  name_url: "bt-03",
+  description: "BOOTS 03",
+  sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+  images: ["01.png"],
+  price: 152.00,
+  category: ["FOOTWEAR", "BOOTS"]
 }
 
 const ha01: ProductType = {
@@ -467,7 +467,7 @@ const ha01: ProductType = {
   description: "HAT 01",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png", "02.png"],
-  price: 435.00,
+  price: 29.00,
   category: ["ACCESSORIES", "HATS"]
 }
 
@@ -478,7 +478,7 @@ const ha02: ProductType = {
   description: "HAT 02",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  price: 435.00,
+  price: 35.00,
   category: ["ACCESSORIES", "HATS"]
 }
 
@@ -489,7 +489,7 @@ const gs01: ProductType = {
   description: "GLASSES 01",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  price: 435.00,
+  price: 98.00,
   category: ["ACCESSORIES", "GLASSES"]
 }
 
@@ -500,7 +500,7 @@ const gs02: ProductType = {
   description: "GLASSES 02",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
-  price: 435.00,
+  price: 102.00,
   category: ["ACCESSORIES", "GLASSES"]
 }
 
