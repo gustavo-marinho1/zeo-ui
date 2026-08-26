@@ -1,6 +1,6 @@
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
-import { ProductGrid } from "@/components/home/product-group";
+import { ProductGrid } from "@/components/product/product";
 import Product from "@/components/product/product";
 import { collections, type CollectionType } from "@/lib/collections";
 import { Loader, SearchX } from "lucide-react";

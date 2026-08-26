@@ -1,6 +1,6 @@
 import Header from "../../components/header/header"
 import Footer from "../../components/footer/footer"
-import { ProductGrid } from "../../components/home/product-group"
+import { ProductGrid } from "../../components/product/product"
 import Product from "../../components/product/product"
 import { footwear, type ProductType } from "../../lib/products"
 import { useState } from "react"
