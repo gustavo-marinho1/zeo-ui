@@ -27,7 +27,7 @@ export default function Home() {
           <Collections />
         </section>
 
-        <section className="mt-10">
+        <section className="mt-0.5">
           <Categories />
         </section>
       </main>
