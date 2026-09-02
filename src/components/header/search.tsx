@@ -1,17 +1,16 @@
 import { useState, type JSX } from "react";
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogClose, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Input } from "../ui/input";
-import { SearchIcon } from "lucide-react";
+import { SearchIcon, XIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 interface Props {
-  children: JSX.Element,
-  open: boolean,
-  setOpen: (v: boolean) => void
+  children: JSX.Element
 }
 
-export const Search = ({ children, open, setOpen }: Props) => {
+export const Search = ({ children }: Props) => {
   const navigate = useNavigate();
+  const [open, setOpen] = useState<boolean>(false);
   const [query, setQuery] = useState<string>("");
 
   const submit = (query: string) => {
@@ -30,44 +29,51 @@ export const Search = ({ children, open, setOpen }: Props) => {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
 
-      <DialogTrigger className="flex items-center">
+      <DialogTrigger data-testid="search-trigger" className="flex items-center">
         {children}
       </DialogTrigger>
+      {open && (
+        <DialogContent data-testid="search-content" className="sm:max-w-3xl ring-0 bg-white rounded-sm gap-3" showCloseButton={false}>
+          <DialogHeader className="flex flex-col gap-4">
+            <div className="flex justify-between items-center">
+              <DialogTitle>
+                <label className="font-light" htmlFor="search">Search</label>
+              </DialogTitle>
+              <DialogClose data-testid="search-close-trigger" className="flex items-center cursor-pointer">
+                <XIcon size={18} color="black" />
+              </DialogClose>
+            </div>
+          </DialogHeader>
 
-      <DialogContent className="sm:max-w-3xl ring-0 bg-white rounded-sm gap-1">
-        <DialogHeader>
-          <DialogTitle>
-            <label className="font-light" htmlFor="search">Search</label>
-          </DialogTitle>
-          <DialogDescription></DialogDescription>
-        </DialogHeader>
-
-        <form onSubmit={e => {
-          e.preventDefault();
-          submit(query);
-        }}>
-          <div className="flex items-center gap-1">
-            <Input
-              id="search"
-              className="h-10 border-neutral-400 focus:border-black rounded-none"
-              placeholder="What are you looking for?"
-              value={query}
-              onChange={e => {
-                setQuery(e.target.value)
-              }}
-            />
-            <button
-              type="button"
-              className="size-10 border border-neutral-400 hover:border-black rounded-none flex justify-center items-center cursor-pointer"
-              onClick={() => {
-                submit(query);
-              }}
-            >
-              <SearchIcon strokeWidth={1.3} size={20} />
-            </button>
-          </div>
-        </form>
-      </DialogContent>
+          <form onSubmit={e => {
+            e.preventDefault();
+            submit(query);
+          }}>
+            <div className="flex items-center gap-1">
+              <Input
+                id="search"
+                data-testid="search-field"
+                className="h-10 border-neutral-400 focus:border-black rounded-none"
+                placeholder="What are you looking for?"
+                value={query}
+                onChange={e => {
+                  setQuery(e.target.value)
+                }}
+              />
+              <button
+                data-testid="search-submit"
+                type="button"
+                className="size-10 border border-neutral-400 hover:border-black rounded-none flex justify-center items-center cursor-pointer"
+                onClick={() => {
+                  submit(query);
+                }}
+              >
+                <SearchIcon strokeWidth={1.3} size={20} />
+              </button>
+            </div>
+          </form>
+        </DialogContent>
+      )}
 
     </Dialog>
   )
