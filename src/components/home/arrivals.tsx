@@ -1,5 +1,5 @@
 import { arrivals } from "@/lib/products"
-import Product from "../product/product"
+import Product from "../product/product-card"
 
 export const Arrivals = () => {
   return (

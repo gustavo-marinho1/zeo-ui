@@ -1,7 +1,7 @@
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
-import { ProductGrid } from "@/components/product/product";
-import Product from "@/components/product/product";
+import { ProductGrid } from "@/components/product/product-grid";
+import ProductCard from "@/components/product/product-card";
 import { Input } from "@/components/ui/input";
 import { products, type ProductType } from "@/lib/products";
 import { Loader, SearchIcon } from "lucide-react";
@@ -111,7 +111,7 @@ export default function Search() {
             ) : (
               <ProductGrid>
                 {results.map((p) => (
-                  <Product key={p.id} product={p} />
+                  <ProductCard key={p.id} product={p} />
                 ))}
               </ProductGrid>
             )

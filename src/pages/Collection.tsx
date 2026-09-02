@@ -1,7 +1,7 @@
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
-import { ProductGrid } from "@/components/product/product";
-import Product from "@/components/product/product";
+import { ProductGrid } from "@/components/product/product-grid";
+import ProductCard from "@/components/product/product-card";
 import { collections, type CollectionType } from "@/lib/collections";
 import { Loader, SearchX } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -81,7 +81,7 @@ export const Item = ({ collection }: { collection: CollectionType }) => {
         <div className="mt-4">
           <ProductGrid>
             {collection.products.map(product => (
-              <Product key={product.id} product={product} />
+              <ProductCard key={product.id} product={product} />
             ))}
           </ProductGrid>
         </div>

@@ -4,6 +4,7 @@ import { products, type ProductType } from "../lib/products";
 import Footer from "../components/footer/footer";
 import { useNavigate, useParams } from "react-router-dom";
 import { currencyBRL } from "../services/format";
+import { BtnProductSize } from "../components/product/button-product-size";
 
 export default function Product() {
   const { id } = useParams<{ id: string }>();
@@ -69,7 +70,7 @@ export default function Product() {
                   <h4 className="text-md font-semibold">Size</h4>
                   <div className="">
                     {product.sizes.map((size) => (
-                      <BtnSize
+                      <BtnProductSize
                         key={size}
                         size={size}
                         selected={size === selectedSize}
@@ -79,9 +80,9 @@ export default function Product() {
                   </div>
                 </div>
                 {/* Buy button */}
-                <button className="bg-neutral-900 hover:bg-black text-white p-2 md:mt-2 cursor-pointer">
+                {/* <button className="bg-neutral-900 hover:bg-black text-white p-2 md:mt-2 cursor-pointer">
                   ADD TO BAG
-                </button>
+                </button> */}
 
                 {/* Information */}
                 <div className="flex flex-col gap-2 bg-neutral-100 p-5 mt-6">
@@ -101,19 +102,5 @@ export default function Product() {
 
       <Footer />
     </>
-  )
-}
-
-const BtnSize = ({ size, selected, onClick }: { size: string, selected: boolean, onClick: () => void }) => {
-  return (
-    <button
-      className={`
-        border border-black/40 text-sm h-10 w-10 cursor-pointer mr-2 mb-2
-        ${selected ? "bg-black text-white" : ""}
-      `}
-      onClick={onClick}
-    >
-      {size}
-    </button>
   )
 }

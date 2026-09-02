@@ -1,5 +1,5 @@
 import { seasonal } from "../../lib/products"
-import Product from "../product/product"
+import Product from "../product/product-card"
 
 export const Seasonal = () => {
   return (

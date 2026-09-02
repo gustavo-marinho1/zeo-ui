@@ -1,7 +1,7 @@
 import Header from "../../components/header/header"
 import Footer from "../../components/footer/footer"
-import { ProductGrid } from "../../components/product/product"
-import Product from "../../components/product/product"
+import { ProductGrid } from "../../components/product/product-grid"
+import ProductCard from "../../components/product/product-card"
 import { tops, type ProductType } from "../../lib/products"
 import { useState } from "react"
 
@@ -77,7 +77,7 @@ export default function Tops() {
           ) : (
             <ProductGrid>
               {products.map((product) => (
-                <Product key={product.id} product={product} />
+                <ProductCard key={product.id} product={product} />
               ))}
             </ProductGrid>
           )}
