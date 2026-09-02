@@ -1,31 +1,43 @@
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { Menu } from "lucide-react"
+import { useWindowWidth } from "@/hooks/useWindowWidth";
+import { Menu, X } from "lucide-react"
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export const SideBar = ({ textBlack }: { textBlack?: boolean }) => {
+  const { isMobile } = useWindowWidth();
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <Sheet>
-      <SheetTrigger className="md:hidden cursor-pointer" asChild>
-        <Menu size={22} strokeWidth={1.5} color={textBlack ? "black" : "white"} />
-      </SheetTrigger>
+    <Sheet open={isMobile ? isOpen : false} onOpenChange={setIsOpen}>
+      {isMobile && (
+        <SheetTrigger className="cursor-pointer" asChild>
+          <Menu data-testid="sidebar-trigger" size={22} strokeWidth={1.5} color={textBlack ? "black" : "white"} />
+        </SheetTrigger>
+      )}
 
-      <SheetContent side="left" className="bg-white border-none md:hidden gap-0">
-        <SheetHeader>
-          <SheetTitle>
-            <Link to="/" className="text-md font-bold">
-              ZEO
-            </Link>
-          </SheetTitle>
-        </SheetHeader>
+      {(isMobile && isOpen) && (
+        <SheetContent data-testid="sidebar-content" side="left" className={`bg-white border-none ${isOpen ? "block" : "hidden"} md:hidden gap-0 [&_button:has(svg.lucide-x)]:hidden`}>
+          <SheetHeader className="flex flex-row items-center justify-between p-4">
+            <SheetTitle>
+              <Link to="/" className="text-md font-bold">
+                ZEO
+              </Link>
+            </SheetTitle>
+            <SheetClose className="cursor-pointer" asChild>
+              <X data-testid="sidebar-close-trigger" size={20} strokeWidth={1.3} />
+            </SheetClose>
+          </SheetHeader>
 
-        {/* <div className="border-b border-neutral-300 w-full" />
+          {/* <div className="border-b border-neutral-300 w-full" />
 
         <div className="p-1 flex gap-1">
           <Link to="/" className="w-full py-2 bg-neutral-100">
@@ -42,52 +54,53 @@ export const SideBar = ({ textBlack }: { textBlack?: boolean }) => {
           </Link>
         </div> */}
 
-        <div className="border-b border-neutral-300 w-full" />
+          <div className="border-b border-neutral-300 w-full" />
 
-        <div className="p-2 flex">
-          <Link to="/arrivals">
-            <span className="text-sm font-semibold">ARRIVALS</span>
-          </Link>
-        </div>
+          <div className="p-2 flex">
+            <Link to="/arrivals">
+              <span className="text-sm font-semibold">ARRIVALS</span>
+            </Link>
+          </div>
 
-        <div className="border-b border-neutral-300 w-full" />
+          <div className="border-b border-neutral-300 w-full" />
 
-        <div className="flex flex-col items-start gap-3 p-2">
+          <div className="flex flex-col items-start gap-3 p-2">
 
-          <div className="flex flex-col gap-1">
-            <span className="text-sm font-semibold">READY-TO-WEAR</span>
-            <div className="ml-3 flex flex-col gap-1">
-              <Link to="/shop/tops">
-                <span className="text-sm">Tops</span>
-              </Link>
-              <Link to="/shop/bottoms">
-                <span className="text-sm">Bottoms</span>
-              </Link>
-              <Link to="/shop/footwear">
-                <span className="text-sm">Footwear</span>
-              </Link>
-              <Link to="/shop/accessories">
-                <span className="text-sm">Accessories</span>
-              </Link>
+            <div className="flex flex-col gap-1">
+              <span className="text-sm font-semibold">READY-TO-WEAR</span>
+              <div className="ml-3 flex flex-col gap-1">
+                <Link to="/shop/tops">
+                  <span className="text-sm">Tops</span>
+                </Link>
+                <Link to="/shop/bottoms">
+                  <span className="text-sm">Bottoms</span>
+                </Link>
+                <Link to="/shop/footwear">
+                  <span className="text-sm">Footwear</span>
+                </Link>
+                <Link to="/shop/accessories">
+                  <span className="text-sm">Accessories</span>
+                </Link>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-1">
+              <span className="text-sm font-semibold">COLLECTIONS</span>
+              <div className="ml-3 flex flex-col gap-1">
+                <Link to="/seasonal">
+                  <span className="text-sm">Seasonal</span>
+                </Link>
+              </div>
             </div>
           </div>
 
-          <div className="flex flex-col gap-1">
-            <span className="text-sm font-semibold">COLLECTIONS</span>
-            <div className="ml-3 flex flex-col gap-1">
-              <Link to="/seasonal">
-                <span className="text-sm">Seasonal</span>
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        <SheetFooter>
-          <Link to="/about">
-            <span className="text-sm">About</span>
-          </Link>
-        </SheetFooter>
-      </SheetContent>
+          <SheetFooter>
+            <Link to="/about">
+              <span className="text-sm">About</span>
+            </Link>
+          </SheetFooter>
+        </SheetContent>
+      )}
     </Sheet>
   )
 }
