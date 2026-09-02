@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import { SideBar } from "../sidebar/sidebar";
 import { Shop } from "./shop";
 import { useWindowWidth } from "@/hooks/useWindowWidth";
 
 export const LeftCorner = ({ textBlack }: { textBlack?: boolean }) => {
   const { isMobile } = useWindowWidth();
-  const [shopOpen, setShopOpen] = useState(false);
 
   const styleBtn = `
     cursor-pointer px-1.5 py-0.5
@@ -26,10 +24,10 @@ export const LeftCorner = ({ textBlack }: { textBlack?: boolean }) => {
             </button>
           </Link>
 
-          <Shop open={shopOpen} setOpen={setShopOpen}>
-            <button className={styleBtn} onClick={() => setShopOpen(!shopOpen)}>
+          <Shop>
+            <div className={styleBtn}>
               <span className="text-sm">SHOP</span>
-            </button>
+            </div>
           </Shop>
 
           <Link to="/about" data-testid="about-link">
