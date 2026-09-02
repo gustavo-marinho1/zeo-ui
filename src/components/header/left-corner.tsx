@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { SideBar } from "../sidebar/sidebar";
 import { Shop } from "./shop";
+import { useWindowWidth } from "@/hooks/useWindowWidth";
 
 export const LeftCorner = ({ textBlack }: { textBlack?: boolean }) => {
+  const { isMobile } = useWindowWidth();
   const [shopOpen, setShopOpen] = useState(false);
 
   const styleBtn = `
@@ -16,25 +18,27 @@ export const LeftCorner = ({ textBlack }: { textBlack?: boolean }) => {
     <div className="flex items-center">
       <SideBar textBlack={textBlack} />
 
-      <div className="hidden md:flex items-center gap-1">
-        <Link to="/arrivals">
-          <button className={styleBtn}>
-            <span className="text-sm">Arrivals</span>
-          </button>
-        </Link>
+      {!isMobile && (
+        <div data-testid="header-left-corner-desktop-options" className="flex items-center gap-1">
+          <Link to="/arrivals" data-testid="arrivals-link">
+            <button className={styleBtn}>
+              <span className="text-sm">Arrivals</span>
+            </button>
+          </Link>
 
-        <Shop open={shopOpen} setOpen={setShopOpen}>
-          <button className={styleBtn} onClick={() => setShopOpen(!shopOpen)}>
-            <span className="text-sm">SHOP</span>
-          </button>
-        </Shop>
+          <Shop open={shopOpen} setOpen={setShopOpen}>
+            <button className={styleBtn} onClick={() => setShopOpen(!shopOpen)}>
+              <span className="text-sm">SHOP</span>
+            </button>
+          </Shop>
 
-        <Link to="/about">
-          <button className={styleBtn}>
-            <span className="text-sm">About</span>
-          </button>
-        </Link>
-      </div>
+          <Link to="/about" data-testid="about-link">
+            <button className={styleBtn}>
+              <span className="text-sm">About</span>
+            </button>
+          </Link>
+        </div>
+      )}
     </div>
   )
 }

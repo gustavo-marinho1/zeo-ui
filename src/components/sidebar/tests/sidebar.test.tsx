@@ -2,13 +2,7 @@ import { describe, test, expect, beforeEach } from 'vitest';
 import { act, screen, waitFor } from '@testing-library/react';
 import { SideBar } from '@/components/sidebar/sidebar';
 import userEvent, { PointerEventsCheckLevel } from '@testing-library/user-event';
-import { renderWithRouter } from '@/utils/test-utils';
-
-// Function to simulate the change of screen size in Vitest
-function setViewportWidth(width: number) {
-  Object.defineProperty(window, 'innerWidth', { writable: true, configurable: true, value: width });
-  window.dispatchEvent(new Event('resize'));
-}
+import { renderWithRouter, setViewportWidth } from '@/utils/test-utils';
 
 describe('Sidebar', () => {
 

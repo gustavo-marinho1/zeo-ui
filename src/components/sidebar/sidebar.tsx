@@ -19,8 +19,8 @@ export const SideBar = ({ textBlack }: { textBlack?: boolean }) => {
   return (
     <Sheet open={isMobile ? isOpen : false} onOpenChange={setIsOpen}>
       {isMobile && (
-        <SheetTrigger className="cursor-pointer" asChild>
-          <Menu data-testid="sidebar-trigger" size={22} strokeWidth={1.5} color={textBlack ? "black" : "white"} />
+        <SheetTrigger data-testid="sidebar-trigger" className="cursor-pointer" asChild>
+          <Menu size={22} strokeWidth={1.5} color={textBlack ? "black" : "white"} />
         </SheetTrigger>
       )}
 
