@@ -8,7 +8,7 @@ export default function Product({ product, onlyImage = false }: { product: Produ
       <div className="bg-neutral-100 w-full aspect-[4/4] relative overflow-hidden">
         <div className="absolute top-0 left-0 bottom-0 right-0 flex justify-center items-center">
           <img
-            src={`/images/products/${product.name_url}/${product.images[0]}`}
+            src={`/images/products/${product.id}/${product.images[0]}`}
             alt={product.name}
             className="w-full h-full object-cover"
           />

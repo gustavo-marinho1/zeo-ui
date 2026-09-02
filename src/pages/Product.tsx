@@ -51,7 +51,7 @@ export default function Product() {
               {product.images.map((image) => (
                 <img
                   key={image}
-                  src={`/images/products/${product.name_url}/${image}`}
+                  src={`/images/products/${product.id}/${image}`}
                   alt={product.name}
                   className="w-full object-cover"
                 />

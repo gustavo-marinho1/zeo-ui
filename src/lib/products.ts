@@ -1,7 +1,6 @@
 export type ProductType = {
   id: string,
   name: string,
-  name_url: string,
   price: number,
   description: string,
   sizes: string[],
@@ -12,7 +11,6 @@ export type ProductType = {
 const hd01: ProductType = {
   id: "hd01",
   name: "HOODIE 01",
-  name_url: "hd-01",
   description: "HOODIE 01",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png", "02.png"],
@@ -23,7 +21,6 @@ const hd01: ProductType = {
 const hd02: ProductType = {
   id: "hd02",
   name: "HOODIE 02",
-  name_url: "hd-02",
   description: "HOODIE 02",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -34,7 +31,6 @@ const hd02: ProductType = {
 const hd03: ProductType = {
   id: "hd03",
   name: "HOODIE 03",
-  name_url: "hd-03",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "HOODIE 03",
@@ -45,7 +41,6 @@ const hd03: ProductType = {
 const hd04: ProductType = {
   id: "hd04",
   name: "HOODIE 04",
-  name_url: "hd-04",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "HOODIE 04",
@@ -56,7 +51,6 @@ const hd04: ProductType = {
 const hd05: ProductType = {
   id: "hd05",
   name: "HOODIE 05",
-  name_url: "hd-05",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "HOODIE 05",
@@ -67,7 +61,6 @@ const hd05: ProductType = {
 const hd06: ProductType = {
   id: "hd06",
   name: "HOODIE 06",
-  name_url: "hd-06",
   description: "HOODIE 06",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -78,7 +71,6 @@ const hd06: ProductType = {
 export const hd07: ProductType = {
   id: "hd07",
   name: "HOODIE 07",
-  name_url: "hd-07",
   description: "Crafted from heavyweight premium cotton, this oversized black hooded jacket boasts a unique concealed button-front. The standout feature is its intentional distressed finish, with strategic fraying and minor holes throughout, offering a rugged, aged appeal. It includes deep front pockets, a structured integrated hood, and generous ribbed cuffs. This garment combines utilitarian tech details with an edgy, worn-in aesthetic, creating a powerful contemporary piece.",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.jpg"],
@@ -89,7 +81,6 @@ export const hd07: ProductType = {
 const jc01: ProductType = {
   id: "jc01",
   name: "JACKET 01",
-  name_url: "jc-01",
   description: "JACKET 01",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -100,7 +91,6 @@ const jc01: ProductType = {
 const jc02: ProductType = {
   id: "jc02",
   name: "JACKET 02",
-  name_url: "jc-02",
   description: "JACKET 02",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -111,7 +101,6 @@ const jc02: ProductType = {
 const jc03: ProductType = {
   id: "jc03",
   name: "JACKET 03",
-  name_url: "jc-03",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "JACKET 03",
@@ -122,7 +111,6 @@ const jc03: ProductType = {
 export const jc04: ProductType = {
   id: "jc04",
   name: "JACKET 04",
-  name_url: "jc-04",
   description: "Elevate your outerwear with this black, bomber-style leather jacket. Crafted from a soft, subtly shiny leather, it offers a sophisticated take on a classic. Key details include a classic point collar, a clean concealed front closure, and two functional, large bellow pockets with structured flaps. Rib-knit cuffs and a matching ribbed hem provide a defined, sporty silhouette. A versatile piece that balances timeless style with contemporary design.",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -133,7 +121,6 @@ export const jc04: ProductType = {
 export const ls01: ProductType = {
   id: "ls01",
   name: "LONG SLEEVE 01",
-  name_url: "ls-01",
   description: "This essential layering piece is a classic, soft-jersey cotton long-sleeve t-shirt in deep black. It features a fitted, comfortable silhouette and clean seams. Designed for maximum versatility, this tee is a core wardrobe staple. The fine rib-knit collar and cuffs provide a structured look that holds its shape, making it perfect for building complex, edgy outfits. Pair it under oversized t-shirts, jackets, or leather pieces for a modern, gothic, or alternative vibe.",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -144,7 +131,6 @@ export const ls01: ProductType = {
 export const ls02: ProductType = {
   id: "ls02",
   name: "LONG SLEEVE 02",
-  name_url: "ls-02",
   description: "This long-sleeved tee features a unique charcoal gray vintage pigment wash, giving it a soft, lived-in feel. A subtle, vertical tonal graphic, resembling abstract tribal or circuit-like lines, runs down the front and the length of the sleeves. Made from premium cotton, it offers a relaxed, slightly oversized fit and is designed for layering, blending a worn-in aesthetic with precise technical detail, perfect for the modern cyber-grunge look.",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -155,7 +141,6 @@ export const ls02: ProductType = {
 export const ls03: ProductType = {
   id: "ls03",
   name: "LONG SLEEVE 03",
-  name_url: "ls-03",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "This oversized crewneck long-sleeved tee features a unique, heavily washed charcoal black finish, giving it a worn-in, vintage appearance. The dropped shoulder design enhances the relaxed silhouette, while exposed tonal seams along the shoulders and sleeves add a technical, edge-driven detail. Crafted from a premium heavy cotton, it offers a comfortable, structured drape, perfect for a high-concept streetwear aesthetic.",
@@ -166,7 +151,6 @@ export const ls03: ProductType = {
 const ct01: ProductType = {
   id: "ct01",
   name: "COAT 01",
-  name_url: "ct-01",
   description: "COAT 01",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -177,7 +161,6 @@ const ct01: ProductType = {
 const ct02: ProductType = {
   id: "ct02",
   name: "COAT 02",
-  name_url: "ct-02",
   description: "COAT 02",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -188,7 +171,6 @@ const ct02: ProductType = {
 const ct03: ProductType = {
   id: "ct03",
   name: "COAT 03",
-  name_url: "ct-03",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "COAT 03",
@@ -199,7 +181,6 @@ const ct03: ProductType = {
 const ct04: ProductType = {
   id: "ct04",
   name: "COAT 04",
-  name_url: "ct-04",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png", "02.png"],
   description: "COAT 04",
@@ -210,7 +191,6 @@ const ct04: ProductType = {
 const ts01: ProductType = {
   id: "ts01",
   name: "T-SHIRT 01",
-  name_url: "ts-01",
   description: "T-SHIRT 01",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -221,7 +201,6 @@ const ts01: ProductType = {
 const ts02: ProductType = {
   id: "ts02",
   name: "T-SHIRT 02",
-  name_url: "ts-02",
   description: "T-SHIRT 02",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -232,7 +211,6 @@ const ts02: ProductType = {
 const ts03: ProductType = {
   id: "ts03",
   name: "T-SHIRT 03",
-  name_url: "ts-03",
   description: "T-SHIRT 03",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png", "02.png"],
@@ -243,7 +221,6 @@ const ts03: ProductType = {
 const ts04: ProductType = {
   id: "ts04",
   name: "T-SHIRT 04",
-  name_url: "ts-04",
   description: "T-SHIRT 04",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -254,7 +231,6 @@ const ts04: ProductType = {
 const ts05: ProductType = {
   id: "ts05",
   name: "T-SHIRT 05",
-  name_url: "ts-05",
   description: "T-SHIRT 05",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -265,7 +241,6 @@ const ts05: ProductType = {
 const ts06: ProductType = {
   id: "ts06",
   name: "T-SHIRT 06",
-  name_url: "ts-06",
   description: "T-SHIRT 06",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -276,7 +251,6 @@ const ts06: ProductType = {
 const ts07: ProductType = {
   id: "ts07",
   name: "T-SHIRT 07",
-  name_url: "ts-07",
   description: "T-SHIRT 07",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -287,7 +261,6 @@ const ts07: ProductType = {
 const pn01: ProductType = {
   id: "pn01",
   name: "PANTS 01",
-  name_url: "pn-01",
   description: "PANTS 01",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -298,7 +271,6 @@ const pn01: ProductType = {
 const pn02: ProductType = {
   id: "pn02",
   name: "PANTS 02",
-  name_url: "pn-02",
   description: "PANTS 02",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png", "02.png"],
@@ -309,7 +281,6 @@ const pn02: ProductType = {
 const pn03: ProductType = {
   id: "pn03",
   name: "PANTS 03",
-  name_url: "pn-03",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "PANTS 03",
@@ -320,7 +291,6 @@ const pn03: ProductType = {
 const pn04: ProductType = {
   id: "pn04",
   name: "PANTS 04",
-  name_url: "pn-04",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "PANTS 04",
@@ -331,7 +301,6 @@ const pn04: ProductType = {
 const pn05: ProductType = {
   id: "pn05",
   name: "PANTS 05",
-  name_url: "pn-05",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "PANTS 05",
@@ -342,7 +311,6 @@ const pn05: ProductType = {
 export const pn06: ProductType = {
   id: "pn06",
   name: "PANTS 06",
-  name_url: "pn-06",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "Matching the tee in its distressed character, these super-oversized cargo pants are made from heavily washed, light-grey denim. They feature an extremely baggy fit for ultimate comfort and a rebellious, anti-fit profile. Multiple large cargo pockets with flap closures are strategically placed on the legs, providing utilitarian storage and adding a rugged, dimensional look that defines the contemporary tech-wear style.",
@@ -353,7 +321,6 @@ export const pn06: ProductType = {
 const pn07: ProductType = {
   id: "pn07",
   name: "PANTS 07",
-  name_url: "pn-07",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
   description: "PANTS 07",
@@ -364,7 +331,6 @@ const pn07: ProductType = {
 const sn01: ProductType = {
   id: "sn01",
   name: "SNEAKERS 01",
-  name_url: "sn-01",
   description: "SNEAKERS 01",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -375,7 +341,6 @@ const sn01: ProductType = {
 const sn02: ProductType = {
   id: "sn02",
   name: "SNEAKERS 02",
-  name_url: "sn-02",
   description: "SNEAKERS 02",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -386,7 +351,6 @@ const sn02: ProductType = {
 const sn03: ProductType = {
   id: "sn03",
   name: "SNEAKERS 03",
-  name_url: "sn-03",
   description: "SNEAKERS 03",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -397,7 +361,6 @@ const sn03: ProductType = {
 const sn04: ProductType = {
   id: "sn04",
   name: "SNEAKERS 04",
-  name_url: "sn-04",
   description: "SNEAKERS 04",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -408,7 +371,6 @@ const sn04: ProductType = {
 const sn05: ProductType = {
   id: "sn05",
   name: "SNEAKERS 05",
-  name_url: "sn-05",
   description: "SNEAKERS 05",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -419,7 +381,6 @@ const sn05: ProductType = {
 const sn06: ProductType = {
   id: "sn06",
   name: "SNEAKERS 06",
-  name_url: "sn-06",
   description: "SNEAKERS 06",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png", "02.png"],
@@ -430,7 +391,6 @@ const sn06: ProductType = {
 export const bt01: ProductType = {
   id: "bt01",
   name: "BOOTS 01",
-  name_url: "bt-01",
   description: "BOOTS 01",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -441,7 +401,6 @@ export const bt01: ProductType = {
 const bt02: ProductType = {
   id: "bt02",
   name: "BOOTS 02",
-  name_url: "bt-02",
   description: "BOOTS 02",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -452,7 +411,6 @@ const bt02: ProductType = {
 const bt03: ProductType = {
   id: "bt03",
   name: "BOOTS 03",
-  name_url: "bt-03",
   description: "BOOTS 03",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -463,7 +421,6 @@ const bt03: ProductType = {
 const ha01: ProductType = {
   id: "ha01",
   name: "HAT 01",
-  name_url: "ha-01",
   description: "HAT 01",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png", "02.png"],
@@ -474,7 +431,6 @@ const ha01: ProductType = {
 const ha02: ProductType = {
   id: "ha02",
   name: "HAT 02",
-  name_url: "ha-02",
   description: "HAT 02",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -485,7 +441,6 @@ const ha02: ProductType = {
 const gs01: ProductType = {
   id: "gs01",
   name: "GLASSES 01",
-  name_url: "gs-01",
   description: "GLASSES 01",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
@@ -496,7 +451,6 @@ const gs01: ProductType = {
 const gs02: ProductType = {
   id: "gs02",
   name: "GLASSES 02",
-  name_url: "gs-02",
   description: "GLASSES 02",
   sizes: ["XS", "S", "M", "L", "XL", "XXL"],
   images: ["01.png"],
