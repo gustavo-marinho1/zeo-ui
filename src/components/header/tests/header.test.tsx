@@ -23,9 +23,7 @@ describe('Sidebar', () => {
 
     expect(screen.queryByTestId('sidebar-trigger')).not.toBeNull();
 
-    act(() => {
-      setViewportWidth(1280);
-    });
+    act(() => setViewportWidth(768));
 
     expect(screen.queryByTestId('sidebar-trigger')).toBeNull();
   });
@@ -66,6 +64,26 @@ describe('Sidebar', () => {
 
     await waitFor(() => {
       expect(screen.queryByTestId('sidebar-content')).toBeNull();
+    });
+  });
+
+  test('when sidebar is open, should close when resizing the screen to a bigger size, and open again when resizing to a smaller size', async () => {
+    setViewportWidth(640);
+    renderWithRouter(<SideBar />);
+
+    await userEvent.click(screen.queryByTestId('sidebar-trigger'));
+    await waitFor(() => {
+      expect(screen.queryByTestId('sidebar-content')).not.toBeNull();
+    });
+
+    act(() => setViewportWidth(768));
+    await waitFor(() => {
+      expect(screen.queryByTestId('sidebar-content')).toBeNull();
+    });
+
+    act(() => setViewportWidth(640));
+    await waitFor(() => {
+      expect(screen.queryByTestId('sidebar-content')).not.toBeNull();
     });
   });
 
