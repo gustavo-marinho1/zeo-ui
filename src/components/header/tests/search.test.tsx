@@ -51,14 +51,14 @@ describe('Search modal', () => {
   test('search-content should be visible when clicking in the trigger button', async () => {
     setup();
 
-    await userEvent.click(screen.queryByTestId('search-trigger'));
+    await userEvent.click(screen.queryByTestId('search-trigger')!);
     expect(screen.queryByTestId('search-content')).not.toBeNull();
   });
 
   test('should close the search modal when clicking outside of it', async () => {
     setup();
 
-    await userEvent.click(screen.queryByTestId('search-trigger'));
+    await userEvent.click(screen.queryByTestId('search-trigger')!);
     await userEvent.click(document.body, {
       pointerEventsCheck: PointerEventsCheckLevel.Never
     });
@@ -71,8 +71,8 @@ describe('Search modal', () => {
   test('should close the search modal when clicking in the close button', async () => {
     setup();
 
-    await userEvent.click(screen.queryByTestId('search-trigger'));
-    await userEvent.click(screen.queryByTestId('search-close-trigger'));
+    await userEvent.click(screen.queryByTestId('search-trigger')!);
+    await userEvent.click(screen.queryByTestId('search-close-trigger')!);
 
     await waitFor(() => {
       expect(screen.queryByTestId('search-content')).toBeNull();
@@ -82,7 +82,7 @@ describe('Search modal', () => {
   test("should close the search modal when press ESC key", async () => {
     setup();
 
-    await userEvent.click(screen.queryByTestId('search-trigger'));
+    await userEvent.click(screen.queryByTestId('search-trigger')!);
     await userEvent.keyboard('{Escape}');
 
     await waitFor(() => {
@@ -93,8 +93,8 @@ describe('Search modal', () => {
   test("should not submit when search-field is empty", async () => {
     setup();
 
-    await userEvent.click(screen.queryByTestId('search-trigger'));
-    await userEvent.click(screen.queryByTestId('search-submit'));
+    await userEvent.click(screen.queryByTestId('search-trigger')!);
+    await userEvent.click(screen.queryByTestId('search-submit')!);
 
     await waitFor(() => {
       expect(mockNavigate).not.toHaveBeenCalled();
@@ -105,9 +105,9 @@ describe('Search modal', () => {
   test("should submit and redirect when search-field is not empty", async () => {
     setup();
 
-    await userEvent.click(screen.queryByTestId('search-trigger'));
-    await userEvent.type(screen.queryByTestId('search-field'), 'shoes');
-    await userEvent.click(screen.queryByTestId('search-submit'));
+    await userEvent.click(screen.queryByTestId('search-trigger')!);
+    await userEvent.type(screen.queryByTestId('search-field')!, 'shoes');
+    await userEvent.click(screen.queryByTestId('search-submit')!);
 
     await waitFor(() => {
       expect(mockNavigate).toHaveBeenCalled();

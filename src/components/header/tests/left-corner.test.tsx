@@ -43,8 +43,7 @@ describe('LeftCorner', () => {
     setViewportWidth(768);
     renderWithRouter(<LeftCorner />, { route: '/' });
 
-    const arrivalsLink = screen.queryByTestId('arrivals-link');
-    await user.click(arrivalsLink);
+    await user.click(screen.queryByTestId('arrivals-link')!);
 
     expect(screen.queryByText('Arrivals')).not.toBeNull();
   });
@@ -55,8 +54,7 @@ describe('LeftCorner', () => {
     setViewportWidth(768);
     renderWithRouter(<LeftCorner />, { route: '/' });
 
-    const aboutLink = screen.queryByTestId('about-link');
-    await user.click(aboutLink);
+    await user.click(screen.queryByTestId('about-link')!);
 
     expect(screen.queryByText('About')).not.toBeNull();
   });

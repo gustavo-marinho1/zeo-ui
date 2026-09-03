@@ -26,7 +26,7 @@ describe('Shop', () => {
     setViewportWidth(768);
     renderWithRouter(<Shop><span className='text-sm'>Shop</span></Shop>);
 
-    await userEvent.click(screen.queryByTestId('shop-trigger'));
+    await userEvent.click(screen.queryByTestId('shop-trigger')!);
     expect(screen.queryByTestId('shop-content')).not.toBeNull();
   });
 
@@ -35,7 +35,7 @@ describe('Shop', () => {
     renderWithRouter(<Shop><span className='text-sm'>Shop</span></Shop>);
 
     // Opens the sidebar
-    await userEvent.click(screen.queryByTestId('shop-trigger'));
+    await userEvent.click(screen.queryByTestId('shop-trigger')!);
     expect(screen.queryByTestId('shop-content')).not.toBeNull();
 
     // Clicks on the external
@@ -53,11 +53,11 @@ describe('Shop', () => {
     renderWithRouter(<Shop><span className='text-sm'>Shop</span></Shop>);
 
     // Opens the sidebar
-    await userEvent.click(screen.queryByTestId('shop-trigger'));
+    await userEvent.click(screen.queryByTestId('shop-trigger')!);
     expect(screen.queryByTestId('shop-content')).not.toBeNull();
 
     // Clicks on the close button
-    await userEvent.click(screen.queryByTestId('shop-close-trigger'));
+    await userEvent.click(screen.queryByTestId('shop-close-trigger')!);
 
     await waitFor(() => {
       expect(screen.queryByTestId('shop-content')).toBeNull();

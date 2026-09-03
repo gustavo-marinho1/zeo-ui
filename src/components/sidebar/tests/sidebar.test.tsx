@@ -26,7 +26,7 @@ describe('Sidebar', () => {
     setViewportWidth(640);
     renderWithRouter(<SideBar />);
 
-    await userEvent.click(screen.queryByTestId('sidebar-trigger'));
+    await userEvent.click(screen.queryByTestId('sidebar-trigger')!);
     expect(screen.queryByTestId('sidebar-content')).not.toBeNull();
   });
 
@@ -35,7 +35,7 @@ describe('Sidebar', () => {
     renderWithRouter(<SideBar />);
 
     // Opens the sidebar
-    await userEvent.click(screen.queryByTestId('sidebar-trigger'));
+    await userEvent.click(screen.queryByTestId('sidebar-trigger')!);
 
     // Clicks on the external
     await userEvent.click(document.body, {
@@ -52,9 +52,9 @@ describe('Sidebar', () => {
     renderWithRouter(<SideBar />);
 
     // Opens the sidebar
-    await userEvent.click(screen.queryByTestId('sidebar-trigger'));
+    await userEvent.click(screen.queryByTestId('sidebar-trigger')!);
     // Clicks on the close button
-    await userEvent.click(screen.queryByTestId('sidebar-close-trigger'));
+    await userEvent.click(screen.queryByTestId('sidebar-close-trigger')!);
 
     await waitFor(() => {
       expect(screen.queryByTestId('sidebar-content')).toBeNull();
@@ -65,7 +65,7 @@ describe('Sidebar', () => {
     setViewportWidth(640);
     renderWithRouter(<SideBar />);
 
-    await userEvent.click(screen.queryByTestId('sidebar-trigger'));
+    await userEvent.click(screen.queryByTestId('sidebar-trigger')!);
     await waitFor(() => {
       expect(screen.queryByTestId('sidebar-content')).not.toBeNull();
     });
