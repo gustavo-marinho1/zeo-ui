@@ -100,12 +100,12 @@ export default function Search() {
           </div>
 
           {loading ? (
-            <div className="w-full flex justify-center py-16">
+            <div data-testid="search-loading" className="w-full flex justify-center py-16">
               <Loader className="animate-spin" />
             </div>
           ) : (
-            (results.length === 0) ? (
-              <div className="flex flex-col items-center justify-center">
+            results.length === 0 ? (
+              <div data-testid="search-empty-state" className="flex flex-col items-center justify-center">
                 <label className="text-sm">No products found</label>
               </div>
             ) : (
