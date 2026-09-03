@@ -7,7 +7,7 @@ export default function ProductCard({ product, onlyImage = false }: {
   onlyImage?: boolean
 }) {
   return (
-    <Link to={`/product/${product.id}`} className="w-full aspect-[4/4] flex flex-col gap-1">
+    <Link to={`/product/${product.id}`} data-testid={product.id + "-test"} className="w-full aspect-[4/4] flex flex-col gap-1">
       <div className="bg-neutral-100 w-full aspect-[4/4] relative overflow-hidden">
         <div className="absolute top-0 left-0 bottom-0 right-0 flex justify-center items-center">
           <img
@@ -19,8 +19,8 @@ export default function ProductCard({ product, onlyImage = false }: {
       </div>
       {!onlyImage && (
         <div className="flex flex-col items-center px-2">
-          <label className="text-sm font-semibold">{product.name}</label>
-          <label className="text-sm">{currencyUS(product.price)}</label>
+          <label data-testid={product.id + "-name-test"} className="text-sm font-semibold">{product.name}</label>
+          <label data-testid={product.id + "-price-test"} className="text-sm">{currencyUS(product.price)}</label>
         </div>
       )}
     </Link>
